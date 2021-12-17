@@ -1,0 +1,163 @@
+.active{
+    background: var(--red);
+}
+
+.about__main__container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+
+    section{
+        display: flex;
+        justify-content: space-evenly;
+        height: auto;
+
+        .about__content{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 1fr;
+            width: 100%;
+            height: auto;
+            .pictures__container{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+                width: 100%;
+                height: 45rem;
+                row-gap: 1.2%;
+                column-gap: 1.5%;
+            
+            
+                .picture{
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+                
+                .picture-1{
+                    background-image: url(../assets/About_Us/gallery-1.jpg);
+                    grid-column: 1/3;
+                    grid-row: 1/2;
+                }
+                
+                .picture-2{
+                    background-image: url(../assets/About_Us/gallery-2.jpg);
+                    grid-column: 1/2;
+                    grid-row: 2/3;
+                }
+                
+                .picture-3{
+                    background-image: url(../assets/About_Us/gallery-3.jpg);
+                    grid-column: 2/3;
+                    grid-row: 2/2;
+                }
+            }
+    
+            .about__flex__text{
+                display: flex;
+                flex-flow: column;
+                padding: 3% 1%;
+                justify-content: space-evenly;
+                align-content: flex-start;
+                width: 100%;
+                #dropdownMenuButton{
+                    text-align: start;
+                    text-transform: capitalize;
+                    font-weight: 400;
+                }
+                .dropdown{
+                    border-radius: 5px;
+                    margin: 1vh 0;
+                    
+                    .dropdown-toggle{
+                        width: 100%;
+                        &:nth-child(odd){
+                            background: var(--black);
+                        }
+                        &:nth-child(even){
+                            background: var(--red);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .section-2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 4%;
+
+        .card-img-top{
+            width: 7rem;
+            height: 7rem;
+        }
+    }
+
+    @media screen and (max-width: 992px){
+        
+        #section__1__container{
+            display: grid;
+            grid-template-areas: 
+            "galeria"
+            "texto";
+            width: 100%;
+            height: auto;
+
+            .about__content{
+                display: flex;
+                flex-flow: column;
+                width: 100%;
+                height: auto;
+
+                .pictures__container{
+                    grid-area: galeria;
+                    display: grid;
+                    width: 100%;
+                    height: auto;
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-rows: repeat(2, 1fr);
+                    img{
+                        width: 100%;
+                        height: auto;
+                    }
+                    .picture{
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                    }
+                
+                    .picture-1{background-image: url(../../assets/About_Us/gallery-1.jpg);}
+                    .picture-2{background-image: url(../../assets/About_Us/gallery-2.jpg);}
+                    .picture-3{background-image: url(../../assets/About_Us/gallery-3.jpg);}
+                }
+            
+                .about__flex__text{
+                    grid-area: texto;
+                    display: flex;
+                    width: 80%;
+                    height: auto;
+                    justify-content: space-around;
+                    .dropdown{
+                        display: flex;
+                        align-items: center;
+                        &-menu p{
+                            font-size: 1rem;
+                        }
+                        #dropdownMenuButton{
+                            font-size: 1.7rem;
+                        }
+                    }
+                }
+            }
+        }
+        
+        .section-2{
+            width: 100%;
+            height: auto;
+        }
+    }
+}

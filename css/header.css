@@ -1,0 +1,32 @@
+:root{
+    --black: rgb(30,31,31);
+    --white: rgb(237,242,244);
+    --blue: rgb(37,56,86);
+    --red: rgb(217,4,41);
+}
+
+#nav-bar-container{
+    background: var(--black);
+}
+
+#nav-bar li{
+    transition: .3s;
+}
+
+.header-filler{
+    height: 10vh;
+    background: none;
+}
+
+.navbar-toggler{
+    background: var(--white);
+}
+
+.nav-link{
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+.nav-item:hover{
+    background: var(--red);
+}

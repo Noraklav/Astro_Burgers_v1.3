@@ -1,0 +1,27 @@
+$black: rgb(30,31,31);
+$white: rgb(237,242,244);
+$blue: rgb(37,56,86);
+$red: rgb(217,4,41);
+
+#nav-bar-container{
+    background: $black;
+    li{
+        transition: .3s;
+        &:hover{
+            background: $red;
+        }
+        a{
+            font-size: 1.3rem;
+            font-weight: 300;
+        }
+    }
+    .navbar-toggler{
+        background: $white;
+    }
+}
+
+.header-filler{
+    height: 10vh;
+    background: none;
+}
+

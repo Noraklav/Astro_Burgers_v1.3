@@ -1,0 +1,215 @@
+.active {
+  background: var(--red);
+}
+
+main {
+  width: 100%;
+  background: linear-gradient(-60deg, var(--blue) 40%, var(--red));
+  font-family: 'Just Another Hand';
+}
+
+main .menu__title h1 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 900%;
+  margin: 1% 0;
+  color: var(--white);
+  text-align: center;
+}
+
+main .menu__food__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 0 0 5% 0;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main .menu__food__container .menu__section__2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .menu__food__container .burgers__title, main .menu__food__container .appetizers__title, main .menu__food__container .drink__title, main .menu__food__container .dessert__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: normal;
+  color: var(--white);
+  font-size: 375%;
+  text-align: center;
+  text-transform: uppercase;
+  width: 98%;
+  border: 0.3rem dashed var(--white);
+  padding: 1% 0;
+  margin: auto;
+}
+
+main .menu__food__container .burger__container, main .menu__food__container .appetizers__container, main .menu__food__container .drink__container, main .menu__food__container .dessert__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  -ms-grid-rows: (1fr)[1];
+      grid-template-rows: repeat(1, 1fr);
+  width: 100%;
+  padding: 4% 0;
+  margin: 1% 0;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+  border-radius: 2.7rem;
+}
+
+main .menu__food__container .burger__container:hover, main .menu__food__container .appetizers__container:hover, main .menu__food__container .drink__container:hover, main .menu__food__container .dessert__container:hover {
+  -webkit-animation: shake .7s linear alternate;
+          animation: shake .7s linear alternate;
+  background: var(--black);
+}
+
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: translateX(-15px);
+            transform: translateX(-15px);
+  }
+  25% {
+    -webkit-transform: translateX(15px);
+            transform: translateX(15px);
+  }
+  50% {
+    -webkit-transform: translateX(-7px);
+            transform: translateX(-7px);
+  }
+  75% {
+    -webkit-transform: translateX(7px);
+            transform: translateX(7px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes shake {
+  0% {
+    -webkit-transform: translateX(-15px);
+            transform: translateX(-15px);
+  }
+  25% {
+    -webkit-transform: translateX(15px);
+            transform: translateX(15px);
+  }
+  50% {
+    -webkit-transform: translateX(-7px);
+            transform: translateX(-7px);
+  }
+  75% {
+    -webkit-transform: translateX(7px);
+            transform: translateX(7px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+main .menu__food__container .burger__container .burger__img__container, main .menu__food__container .burger__container .appetizers__img__container, main .menu__food__container .burger__container .drink__img__container, main .menu__food__container .burger__container .dessert__img__container, main .menu__food__container .appetizers__container .burger__img__container, main .menu__food__container .appetizers__container .appetizers__img__container, main .menu__food__container .appetizers__container .drink__img__container, main .menu__food__container .appetizers__container .dessert__img__container, main .menu__food__container .drink__container .burger__img__container, main .menu__food__container .drink__container .appetizers__img__container, main .menu__food__container .drink__container .drink__img__container, main .menu__food__container .drink__container .dessert__img__container, main .menu__food__container .dessert__container .burger__img__container, main .menu__food__container .dessert__container .appetizers__img__container, main .menu__food__container .dessert__container .drink__img__container, main .menu__food__container .dessert__container .dessert__img__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .menu__food__container .burger__container .burger__content, main .menu__food__container .burger__container .appetizers__content, main .menu__food__container .burger__container .drink__content, main .menu__food__container .burger__container .dessert__content, main .menu__food__container .appetizers__container .burger__content, main .menu__food__container .appetizers__container .appetizers__content, main .menu__food__container .appetizers__container .drink__content, main .menu__food__container .appetizers__container .dessert__content, main .menu__food__container .drink__container .burger__content, main .menu__food__container .drink__container .appetizers__content, main .menu__food__container .drink__container .drink__content, main .menu__food__container .drink__container .dessert__content, main .menu__food__container .dessert__container .burger__content, main .menu__food__container .dessert__container .appetizers__content, main .menu__food__container .dessert__container .drink__content, main .menu__food__container .dessert__container .dessert__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  width: 90%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-column: 2/5;
+}
+
+main .menu__food__container .burger__container .burger__content h2, main .menu__food__container .burger__container .appetizers__content h2, main .menu__food__container .burger__container .drink__content h2, main .menu__food__container .burger__container .dessert__content h2, main .menu__food__container .appetizers__container .burger__content h2, main .menu__food__container .appetizers__container .appetizers__content h2, main .menu__food__container .appetizers__container .drink__content h2, main .menu__food__container .appetizers__container .dessert__content h2, main .menu__food__container .drink__container .burger__content h2, main .menu__food__container .drink__container .appetizers__content h2, main .menu__food__container .drink__container .drink__content h2, main .menu__food__container .drink__container .dessert__content h2, main .menu__food__container .dessert__container .burger__content h2, main .menu__food__container .dessert__container .appetizers__content h2, main .menu__food__container .dessert__container .drink__content h2, main .menu__food__container .dessert__container .dessert__content h2 {
+  font-size: 250%;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: var(--white);
+}
+
+main .menu__food__container .burger__container .burger__content p, main .menu__food__container .burger__container .appetizers__content p, main .menu__food__container .burger__container .drink__content p, main .menu__food__container .burger__container .dessert__content p, main .menu__food__container .appetizers__container .burger__content p, main .menu__food__container .appetizers__container .appetizers__content p, main .menu__food__container .appetizers__container .drink__content p, main .menu__food__container .appetizers__container .dessert__content p, main .menu__food__container .drink__container .burger__content p, main .menu__food__container .drink__container .appetizers__content p, main .menu__food__container .drink__container .drink__content p, main .menu__food__container .drink__container .dessert__content p, main .menu__food__container .dessert__container .burger__content p, main .menu__food__container .dessert__container .appetizers__content p, main .menu__food__container .dessert__container .drink__content p, main .menu__food__container .dessert__container .dessert__content p {
+  font-family: 'Poppins';
+  font-size: 100%;
+  font-style: normal;
+  font-weight: 300;
+  padding: 0;
+  color: var(--white);
+}
+
+main .menu__food__container .burger__container .burger__price, main .menu__food__container .burger__container .appetizers__price, main .menu__food__container .burger__container .drink__price, main .menu__food__container .burger__container .dessert__price, main .menu__food__container .appetizers__container .burger__price, main .menu__food__container .appetizers__container .appetizers__price, main .menu__food__container .appetizers__container .drink__price, main .menu__food__container .appetizers__container .dessert__price, main .menu__food__container .drink__container .burger__price, main .menu__food__container .drink__container .appetizers__price, main .menu__food__container .drink__container .drink__price, main .menu__food__container .drink__container .dessert__price, main .menu__food__container .dessert__container .burger__price, main .menu__food__container .dessert__container .appetizers__price, main .menu__food__container .dessert__container .drink__price, main .menu__food__container .dessert__container .dessert__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .menu__food__container .burger__container .burger__price p, main .menu__food__container .burger__container .appetizers__price p, main .menu__food__container .burger__container .drink__price p, main .menu__food__container .burger__container .dessert__price p, main .menu__food__container .appetizers__container .burger__price p, main .menu__food__container .appetizers__container .appetizers__price p, main .menu__food__container .appetizers__container .drink__price p, main .menu__food__container .appetizers__container .dessert__price p, main .menu__food__container .drink__container .burger__price p, main .menu__food__container .drink__container .appetizers__price p, main .menu__food__container .drink__container .drink__price p, main .menu__food__container .drink__container .dessert__price p, main .menu__food__container .dessert__container .burger__price p, main .menu__food__container .dessert__container .appetizers__price p, main .menu__food__container .dessert__container .drink__price p, main .menu__food__container .dessert__container .dessert__price p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 281.25%;
+  color: var(--white);
+}
+
+@media screen and (max-width: 762px) {
+  .menu__main__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
+  }
+  .burger__container {
+    width: 40%;
+  }
+}
+/*# sourceMappingURL=menu.css.map */

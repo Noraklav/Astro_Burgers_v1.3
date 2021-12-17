@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/Logo/Logo-SVG.svg">    
+    <!-- STYLES -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../scss/gallery.css">
+    <link rel="stylesheet" href="../scss/header.css">
+    <link rel="stylesheet" href="../scss/footer.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/pre-styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Astro Burgers</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar container-fluid navbar-expand-lg navbar-light fixed-top" id="nav-bar-container">
+            <a class="navbar-brand" href="index.html"><img src="../assets/Logo/Logo-Header.svg" alt=""></a>
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav" id="nav-bar">
+                    <li class="nav-item mx-2 px-3">
+                        <a class="nav-link text-white" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item mx-2 px-3">
+                        <a class="nav-link text-white" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item mx-2 px-3">
+                        <a class="nav-link text-white" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item mx-2 px-3 active">
+                        <a class="nav-link text-white" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item mx-2 px-3">
+                        <a class="nav-link text-white" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="main__title__container">
+            <h1 class="main__title my-3 p-0">Take a look at our branch</h1>
+        </div>
+        
+        
+        <div class="main__grid__container">
+            <!-- Bloque 1 -->
+            <div class="img-grid grid__img-1" data-aos="fade-up-right"></div>
+            <div class="img-1 img-grid" data-aos="fade-down"></div>
+            <div class="img-2 img-grid" data-aos="flip-up"></div>
+            <div class="img-3 img-grid" data-aos="zoom-in"></div>
+            <div class="img-4 img-grid" data-aos="zoom-out"></div>
+            <div class="img-5 img-grid" data-aos="fade-right"></div>
+            
+                <!-- Bloque 2 -->
+            <div class="img-6 img-grid" data-aos="flip-right"></div>
+            <div class="img-grid grid__img-2" data-aos="fade-down"></div>
+            
+            <!-- Bloque 3 -->
+            <div class="img-7 img-grid" data-aos="flip-up"></div>
+            <div class="img-8 img-grid" data-aos="zoom-in-up"></div>
+            <div class="img-grid grid__img-3" data-aos="flip-left"></div>
+            <div class="img-9 img-grid" data-aos="fade-up"></div>
+        </div>
+        <div class="main__final__text" data-aos="zoom-in">
+            <span>We will wait <br> for you IN...</span>
+            <img src="../assets/Logo/Logo-Header.svg" alt="logo">
+        </div>        
+    </main>
+    
+    <footer>
+        <div class="footer__main__container">
+            <!-- CONTACTO -->
+            <img class="logo-footer" src="../../assets/Footer/footer-logo.svg" alt="">
+            <div class="footer__contact__container">
+                <div class="footer__contact__data">
+                    <h2>Contact Us</h2>
+                    <div class="contact__data">
+                        <img src="../../assets/Footer/contact/bx-mail-send.svg" alt="icono-correo"><a href="mailto:reserves@astroburgers.com" target="_blank">reserves@astroburgers.com</a>
+                    </div>
+                    <div class="contact__data">
+                        <img src="../../assets/Footer/contact/bxl-whatsapp.svg" alt="icono-whatsapp"><a href="https://wa.me/+13057545816" target="_blank">+1 305-754-5816</a>
+                    </div>
+                    <div class="contact__data">
+                        <img src="../../assets/Footer/contact/bxs-map.svg" alt="icono-correo">
+                        <div>
+                            <p>1518 Arbutus Drive<br>Miami, FL 33147</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MAPA -->
+            <div class="footer__map__container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d898.2455895927003!2d-80.18722714046781!3d25.77114625040289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b69fd3fb5cf3%3A0x55b035986605a534!2sWolfgang&#39;s%20Steakhouse!5e0!3m2!1ses-419!2sar!4v1638500180761!5m2!1ses-419!2sar" width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+            <!-- REDES SOCIALES -->
+            <div class="footer__social_media__container">
+                <!-- Instagram -->
+                <div class="social__media__data">
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram" id="social__link"></i></a><a href="https://www.instagram.com/astro.burgers/" target="_blank"></a></i><a href="https://www.instagram.com/astro.burgers/" target="_blank">@astroburgers</a>
+                </div>
+                <!-- Twitter -->
+                <div class="social__media__data">
+                    <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter" id="social__link"></i></a><a href="https://www.twitter.com/" target="_blank">Astro_Burgers</a>
+                </div>
+                <!-- Linkedin -->
+                <div class="social__media__data">
+                    <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin" id="social__link"></i></a><a href="https://www.linkedin.com/" target="_blank">Astro Burgers</a>
+                </div>
+                <!-- Youtube -->
+                <div class="social__media__data">
+                    <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube" id="social__link"></i></a><a href="https://www.youtube.com/" target="_blank">Cooking Whit Astro</a>
+                </div>
+                <!-- Twitch -->
+                <div class="social__media__data">
+                    <a href="https://www.twitch.com/" target="_blank"><i class="fab fa-twitch" id="social__link"></i></a><a href="https://www.twitch.tv/" target="_blank">astroburgers</a>
+                </div>
+            </div>
+
+            <div class="footer__mobile d-flex pb-5 w-75 justify-content-between d-lg-none">
+                <!-- Instagram -->
+                <div class="social__media__data__mobile">
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram" id="social__link"></i></a><a href="https://www.instagram.com/astro.burgers/" target="_blank"></a></i>
+                </div>
+                <!-- Twitter -->
+                <div class="social__media__data__mobile">
+                    <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter" id="social__link"></i></a>
+                </div>
+                <!-- Linkedin -->
+                <div class="social__media__data__mobile">
+                    <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin" id="social__link"></i></a>
+                </div>
+                <!-- Youtube -->
+                <div class="social__media__data__mobile">
+                    <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube" id="social__link"></i></a>
+                </div>
+                <!-- Twitch -->
+                <div class="social__media__data__mobile">
+                    <a href="https://www.twitch.com/" target="_blank"><i class="fab fa-twitch" id="social__link"></i></a>
+                </div>
+            </div>
+            
+        </div>
+    </footer>
+    <div class="copy"><span>Copyright 2021 © Astro Burgers - Agustin Di Vincenzo</span></div>
+    <script src="js/burger-menu.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-a11y="true"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+</body>
+</html>

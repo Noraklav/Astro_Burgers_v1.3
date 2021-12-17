@@ -1,0 +1,14 @@
+{
+  "name": "astro_burgers_scss",
+  "version": "1.0.0",
+  "description": "Segunda entrega final del curso de Desarrollo Web de Coderhouse",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "scss"
+  ],
+  "author": "Noraklav",
+  "license": "ISC"
+}

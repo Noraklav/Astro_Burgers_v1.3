@@ -1,0 +1,117 @@
+.active{background: var(--red);}
+
+main{
+    width: 100%;
+    background: linear-gradient(-60deg, var(--blue) 40%, var(--red));
+    font-family: 'Just Another Hand';
+
+    .menu__title {
+        h1{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 900%;
+            margin: 1% 0;
+            color: var(--white);
+            text-align: center;
+        }
+    }
+    .menu__food__container{
+        display: flex;
+        width: 100%;
+        padding: 0 0 5% 0;
+        justify-content: space-evenly;
+        margin: auto;
+        flex-wrap: wrap;
+
+        .menu__section__2{
+            display: flex;
+            flex-flow: column;
+            justify-content: space-between;
+        }
+
+        .burgers__title, .appetizers__title, .drink__title, .dessert__title{
+            display: flex;
+            justify-content: center;
+            font-weight: normal;
+            color: var(--white);
+            font-size: 375%;
+            text-align: center;
+            text-transform: uppercase;
+            width: 98%;
+            border: .3rem dashed var(--white);
+            padding: 1% 0;
+            margin: auto;
+        }
+        .burger__container, .appetizers__container, .drink__container, .dessert__container{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+            width: 100%;
+            padding: 4% 0;
+            margin: 1% 0;
+            transition: all .3s ease-in;
+            border-radius: 2.7rem;
+            &:hover{
+                animation: shake .7s linear alternate;
+                background: var(--black);
+            }
+            @keyframes shake{
+                0%{transform: translateX(-15px);}
+                25%{transform: translateX(15px);}
+                50%{transform: translateX(-7px);}
+                75%{transform: translateX(7px);}
+                100%{transform: translateX(0px);}
+            }
+            .burger__img__container, .appetizers__img__container, .drink__img__container, .dessert__img__container{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .burger__content, .appetizers__content, .drink__content, .dessert__content{
+                display: flex;
+                flex-flow: column;
+                width: 90%;
+                justify-content: center;
+                grid-column: 2/5;
+                h2{
+                    font-size: 250%;
+                    text-transform: uppercase;
+                    font-weight: normal;
+                    color: var(--white);
+                }
+                p{
+                    font-family: 'Poppins';
+                    font-size: 100%;
+                    font-style: normal;
+                    font-weight: 300;
+                    padding: 0;
+                    color: var(--white);
+                }
+            }
+            .burger__price, .appetizers__price, .drink__price, .dessert__price{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                p{
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 281.25%;
+                    color: var(--white);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 762px){
+    .menu__main__container{
+        display: flex;
+        flex-flow: column;
+        width: 100%;
+        justify-content: center;
+        margin: auto;
+    }
+    .burger__container{
+        width: 40%;
+    }
+}
