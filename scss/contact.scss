@@ -1,3 +1,5 @@
+.active{background: var(--red);}
+
 @keyframes floating{
 	0%{transform: translateY(-2vh);}
 	25%{transform: translateY(2vh);}

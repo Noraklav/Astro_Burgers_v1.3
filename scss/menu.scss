@@ -15,6 +15,7 @@ main{
             text-align: center;
         }
     }
+    
     .menu__food__container{
         display: flex;
         width: 100%;
@@ -52,7 +53,7 @@ main{
             transition: all .3s ease-in;
             border-radius: 2.7rem;
             &:hover{
-                animation: shake .7s linear alternate;
+                animation: shake .7s linear both;
                 background: var(--black);
             }
             @keyframes shake{
@@ -73,6 +74,7 @@ main{
                 width: 90%;
                 justify-content: center;
                 grid-column: 2/5;
+                text-transform: uppercase;
                 h2{
                     font-size: 250%;
                     text-transform: uppercase;
@@ -88,7 +90,7 @@ main{
                     color: var(--white);
                 }
             }
-            .burger__price, .appetizers__price, .drink__price, .dessert__price{
+            .__price{
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -113,5 +115,11 @@ main{
     }
     .burger__container{
         width: 40%;
+    }
+}
+
+@media screen and (max-width: 480px){
+    #prices__480{
+        padding-right: 25px;
     }
 }

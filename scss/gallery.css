@@ -1,3 +1,7 @@
+.active {
+  background: var(--red);
+}
+
 body {
   background: var(--white);
   color: var(--black);
@@ -38,16 +42,16 @@ main .main__title__container .main__title {
             transform: scale(1);
   }
   30% {
-    -webkit-transform: rotate(3deg) scale(1.2);
-            transform: rotate(3deg) scale(1.2);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
   50% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
   70% {
-    -webkit-transform: rotate(-3deg) scale(1.2);
-            transform: rotate(-3deg) scale(1.2);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
   100% {
     -webkit-transform: scale(1);
@@ -61,16 +65,16 @@ main .main__title__container .main__title {
             transform: scale(1);
   }
   30% {
-    -webkit-transform: rotate(3deg) scale(1.2);
-            transform: rotate(3deg) scale(1.2);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
   50% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
   70% {
-    -webkit-transform: rotate(-3deg) scale(1.2);
-            transform: rotate(-3deg) scale(1.2);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
   100% {
     -webkit-transform: scale(1);
@@ -87,7 +91,7 @@ main .main__grid__container {
       grid-template-columns: repeat(3, 1fr);
   -ms-grid-rows: (1fr)[8];
       grid-template-rows: repeat(8, 1fr);
-  gap: 15px;
+  gap: 5px;
   padding-top: 5vh;
 }
 
@@ -255,19 +259,22 @@ main .main__final__text img {
 }
 
 @media screen and (max-width: 768px) {
+  main {
+    width: 100%;
+  }
   main .main__title__container {
     width: 90%;
     height: 100vh;
   }
   main .main__title__container .main__title {
-    width: 50%;
-    font-size: 5.5rem;
+    font-size: 5.2rem;
     text-align: center;
   }
   main .main__grid__container {
     display: -ms-grid;
     display: grid;
     height: 300vh;
+    width: 100%;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
     -ms-grid-rows: (auto)[9];
@@ -398,6 +405,17 @@ main .main__final__text img {
   }
   main .main__final__text img {
     width: 50%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  main .main__title__container {
+    width: 100%;
+  }
+  main .main__title__container .main__title {
+    font-size: 60px;
+    font-weight: 500;
+    text-align: center;
   }
 }
 /*# sourceMappingURL=gallery.css.map */

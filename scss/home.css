@@ -183,10 +183,10 @@
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
-  font-size: 150%;
+  font-size: 130%;
   font-weight: 300;
   font-family: 'Lato';
-  width: 80%;
+  width: 90%;
 }
 
 .info__extra {
@@ -268,10 +268,6 @@
   margin: .1%;
   text-align: center;
   text-transform: uppercase;
-}
-
-.menu__main__container .menu__title span {
-  font-size: 150%;
 }
 
 .menu__main__container #menu__card__container {
@@ -373,6 +369,8 @@
 
 .gallery__main__container .gallery__title h1 {
   margin: .1%;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .gallery__main__container .gallery__container {
@@ -576,6 +574,73 @@
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1/2;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .welcome__main__container {
+    width: 100%;
+    height: auto;
+  }
+  .welcome__main__container .welcome__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    width: 100%;
+  }
+  .welcome__main__container .welcome__container .welcome__text__container span {
+    text-align: center;
+    width: 100%;
+  }
+  .welcome__main__container .welcome__container .welcome__text__container p {
+    width: 100%;
+    text-align: justify;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 1rem;
+  }
+  .welcome__main__container .welcome__container .welcome__img__container figure {
+    display: none;
+  }
+  .welcome__main__container .welcome__container .welcome__img__container #welcome__img__mobile {
+    width: 100%;
+    border-radius: 5px;
+  }
+  .info__extra .info__container img {
+    width: 8rem;
+    padding-top: 2%;
+  }
+  .info__extra .info__container .info__text h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+  .info__extra .info__container .info__text span {
+    font-size: 1.7rem;
+    font-style: italic;
+  }
+  .menu__main__container .menu__title h1 {
+    font-size: 4rem;
+  }
+  .menu__main__container .container-fluid .row #menu__card__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+  }
+  .menu__main__container .container-fluid .row #menu__card__container .card-body h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+  }
+  .menu__main__container .container-fluid .row #menu__card__container .card-body p {
+    font-size: 30px;
+  }
+  .gallery__main__container .gallery__title h1 {
+    font-size: 4rem;
   }
 }
 /*# sourceMappingURL=home.css.map */

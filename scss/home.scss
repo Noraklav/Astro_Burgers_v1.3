@@ -1,6 +1,6 @@
-.active{
-    background: var(--red);
-}
+$title_mobile_size: 4rem;
+
+.active{background: var(--red);}
 
 .main__banner{
     background-image: url(../../assets/Home/header.jpg);
@@ -116,10 +116,10 @@
             p{
                 display: flex;
                 justify-content: left;
-                font-size: 150%;
+                font-size: 130%;
                 font-weight: 300;
                 font-family: 'Lato';
-                width: 80%;
+                width: 90%;
             }
         }
     }
@@ -175,9 +175,6 @@
             margin: .1%;
             text-align: center;
             text-transform: uppercase;
-        }
-        span{
-            font-size: 150%;
         }
     }
     #menu__card__container{
@@ -241,6 +238,8 @@
         text-align: center;
         h1{
             margin: .1%;
+            text-align: center;
+            text-transform: uppercase;
         }
     }
     .gallery__container{
@@ -327,7 +326,6 @@
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(3, 1fr);
     }
-
     
     .menu__main__container{
         .menu__title, .gallery__title{
@@ -368,5 +366,78 @@
 }
 
 @media screen and (max-width: 480px) {
-    
+    .welcome__main__container{
+        width: 100%;
+        height: auto;
+        .welcome__container{
+            display: flex;
+            flex-flow: column wrap;
+            width: 100%;
+            
+            .welcome__text__container{
+                span{
+                    text-align: center;
+                    width: 100%;
+                }
+                p{
+                    width: 100%;
+                    text-align: justify;
+                    align-items: center;
+                    padding-top: 1rem;
+                }
+            }
+
+            .welcome__img__container{
+                figure{display: none;}
+                
+                #welcome__img__mobile{
+                    width: 100%;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+
+    .info__extra{
+        .info__container{
+            img{
+                width: 8rem;
+                padding-top: 2%;
+            }
+            .info__text{
+                h3{
+                    font-size: 2.5rem;
+                    font-weight: 700;
+                }
+                span{
+                    font-size: 1.7rem;
+                    font-style: italic;
+                }
+            }
+        }
+    }
+
+    .menu__main__container{
+        .menu__title{
+            h1{font-size: $title_mobile_size;}
+        }
+        .container-fluid{
+            .row{
+                #menu__card__container{
+                    display: flex;
+                    width: 100%;
+                    .card-body{
+                        h2{font-size: 40px;text-transform: uppercase;}
+                        p{font-size: 30px;}
+                    }
+                }
+            }
+        }
+    }
+
+    .gallery__main__container{
+        .gallery__title{
+            h1{font-size: $title_mobile_size;}
+        }
+    }
 }

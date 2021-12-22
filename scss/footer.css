@@ -216,7 +216,7 @@ p {
         -ms-flex-flow: row;
             flex-flow: row;
   }
-  .footer__mobile {
+  #footer__mobile {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -225,16 +225,16 @@ p {
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
   }
-  .footer__mobile .social__media__data__mobile {
+  #footer__mobile .social__media__data__mobile {
     margin: auto;
   }
-  .footer__mobile .social__media__data__mobile #social__link {
+  #footer__mobile .social__media__data__mobile #social__link {
     width: 4rem;
     height: 4rem;
     margin: auto;
     padding: 1rem;
   }
-  .footer__mobile .social__media__data__mobile a, .footer__mobile .social__media__data__mobile p {
+  #footer__mobile .social__media__data__mobile a, #footer__mobile .social__media__data__mobile p {
     font-size: 1rem;
   }
   .copy {
@@ -315,20 +315,12 @@ p {
         -ms-flex-flow: row;
             flex-flow: row;
   }
-  .footer__mobile {
-    width: 100%;
-    padding: 0;
-  }
-  .footer__mobile .social__media__data__mobile {
+  #footer__mobile .social__media__data__mobile {
     padding: 0;
     margin: auto;
   }
-  .footer__mobile .social__media__data__mobile #social__link {
-    margin: auto;
-    padding: 1rem;
-  }
-  .footer__mobile .social__media__data__mobile a, .footer__mobile .social__media__data__mobile p {
-    font-size: 1rem;
+  #footer__mobile .social__media__data__mobile a, #footer__mobile .social__media__data__mobile p {
+    font-size: .8rem;
   }
   .copy {
     font-size: 1rem;

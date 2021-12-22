@@ -95,9 +95,9 @@
       -ms-flex-flow: column;
           flex-flow: column;
   padding: 3% 1%;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-line-pack: start;
       align-content: flex-start;
   width: 100%;
@@ -107,6 +107,7 @@
   text-align: start;
   text-transform: capitalize;
   font-weight: 400;
+  height: 5vh;
 }
 
 .about__main__container section .about__content .about__flex__text .dropdown {
@@ -223,6 +224,32 @@
   .about__main__container .section-2 {
     width: 100%;
     height: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #section__1__container .about__content .about__flex__text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: auto;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  #section__1__container .about__content .about__flex__text .dropdown {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #section__1__container .about__content .about__flex__text .dropdown-menu p {
+    font-size: .5rem;
+  }
+  #section__1__container .about__content .about__flex__text .dropdown #dropdownMenuButton span {
+    font-size: 1rem;
   }
 }
 /*# sourceMappingURL=about.css.map */

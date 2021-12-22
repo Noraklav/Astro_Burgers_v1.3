@@ -78,8 +78,8 @@ main .menu__food__container .burger__container, main .menu__food__container .app
 }
 
 main .menu__food__container .burger__container:hover, main .menu__food__container .appetizers__container:hover, main .menu__food__container .drink__container:hover, main .menu__food__container .dessert__container:hover {
-  -webkit-animation: shake .7s linear alternate;
-          animation: shake .7s linear alternate;
+  -webkit-animation: shake .7s linear both;
+          animation: shake .7s linear both;
   background: var(--black);
 }
 
@@ -156,6 +156,7 @@ main .menu__food__container .burger__container .burger__content, main .menu__foo
   -ms-grid-column: 2;
   -ms-grid-column-span: 3;
   grid-column: 2/5;
+  text-transform: uppercase;
 }
 
 main .menu__food__container .burger__container .burger__content h2, main .menu__food__container .burger__container .appetizers__content h2, main .menu__food__container .burger__container .drink__content h2, main .menu__food__container .burger__container .dessert__content h2, main .menu__food__container .appetizers__container .burger__content h2, main .menu__food__container .appetizers__container .appetizers__content h2, main .menu__food__container .appetizers__container .drink__content h2, main .menu__food__container .appetizers__container .dessert__content h2, main .menu__food__container .drink__container .burger__content h2, main .menu__food__container .drink__container .appetizers__content h2, main .menu__food__container .drink__container .drink__content h2, main .menu__food__container .drink__container .dessert__content h2, main .menu__food__container .dessert__container .burger__content h2, main .menu__food__container .dessert__container .appetizers__content h2, main .menu__food__container .dessert__container .drink__content h2, main .menu__food__container .dessert__container .dessert__content h2 {
@@ -174,7 +175,7 @@ main .menu__food__container .burger__container .burger__content p, main .menu__f
   color: var(--white);
 }
 
-main .menu__food__container .burger__container .burger__price, main .menu__food__container .burger__container .appetizers__price, main .menu__food__container .burger__container .drink__price, main .menu__food__container .burger__container .dessert__price, main .menu__food__container .appetizers__container .burger__price, main .menu__food__container .appetizers__container .appetizers__price, main .menu__food__container .appetizers__container .drink__price, main .menu__food__container .appetizers__container .dessert__price, main .menu__food__container .drink__container .burger__price, main .menu__food__container .drink__container .appetizers__price, main .menu__food__container .drink__container .drink__price, main .menu__food__container .drink__container .dessert__price, main .menu__food__container .dessert__container .burger__price, main .menu__food__container .dessert__container .appetizers__price, main .menu__food__container .dessert__container .drink__price, main .menu__food__container .dessert__container .dessert__price {
+main .menu__food__container .burger__container .__price, main .menu__food__container .appetizers__container .__price, main .menu__food__container .drink__container .__price, main .menu__food__container .dessert__container .__price {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -186,7 +187,7 @@ main .menu__food__container .burger__container .burger__price, main .menu__food_
           justify-content: center;
 }
 
-main .menu__food__container .burger__container .burger__price p, main .menu__food__container .burger__container .appetizers__price p, main .menu__food__container .burger__container .drink__price p, main .menu__food__container .burger__container .dessert__price p, main .menu__food__container .appetizers__container .burger__price p, main .menu__food__container .appetizers__container .appetizers__price p, main .menu__food__container .appetizers__container .drink__price p, main .menu__food__container .appetizers__container .dessert__price p, main .menu__food__container .drink__container .burger__price p, main .menu__food__container .drink__container .appetizers__price p, main .menu__food__container .drink__container .drink__price p, main .menu__food__container .drink__container .dessert__price p, main .menu__food__container .dessert__container .burger__price p, main .menu__food__container .dessert__container .appetizers__price p, main .menu__food__container .dessert__container .drink__price p, main .menu__food__container .dessert__container .dessert__price p {
+main .menu__food__container .burger__container .__price p, main .menu__food__container .appetizers__container .__price p, main .menu__food__container .drink__container .__price p, main .menu__food__container .dessert__container .__price p {
   font-style: normal;
   font-weight: normal;
   font-size: 281.25%;
@@ -210,6 +211,12 @@ main .menu__food__container .burger__container .burger__price p, main .menu__foo
   }
   .burger__container {
     width: 40%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #prices__480 {
+    padding-right: 25px;
   }
 }
 /*# sourceMappingURL=menu.css.map */

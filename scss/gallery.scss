@@ -1,3 +1,7 @@
+.active{
+    background: var(--red);
+}
+
 body{
     background: var(--white);
     color: var(--black);
@@ -22,9 +26,9 @@ main{
             
             @keyframes pulse{
                 0%{transform: scale(1);}
-                30%{transform: rotate(3deg) scale(1.2);}
+                30%{transform: scale(1.1);}
                 50%{transform: scale(1);}
-                70%{transform: rotate(-3deg) scale(1.2);}
+                70%{transform: scale(1.1);}
                 100%{transform: scale(1);}
             }
         }
@@ -35,7 +39,7 @@ main{
         height: 500vh;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(8, 1fr);
-        gap: 15px;
+        gap: 5px;
         padding-top: 5vh;
         
         .grid__img-1{
@@ -149,12 +153,12 @@ main{
 @media screen and (max-width: 768px){
     
     main{
+        width: 100%;
         .main__title__container{
             width: 90%;
             height: 100vh;
             .main__title{
-                width: 50%;
-                font-size: 5.5rem;
+                font-size: 5.2rem;
                 text-align: center;
             }
         }
@@ -162,6 +166,7 @@ main{
         .main__grid__container{
             display: grid;
             height: 300vh;
+            width: 100%;
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(9, auto);
             gap: 15px;
@@ -254,6 +259,19 @@ main{
         
         .main__final__text img{
             width: 50%;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    main{
+        .main__title__container{
+            width: 100%;
+            .main__title{
+                font-size: 60px;
+                font-weight: 500;
+                text-align: center;
+            }
         }
     }
 }
