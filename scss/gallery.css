@@ -263,11 +263,10 @@ main .main__final__text img {
     width: 100%;
   }
   main .main__title__container {
-    width: 90%;
-    height: 100vh;
+    width: 100%;
   }
   main .main__title__container .main__title {
-    font-size: 5.2rem;
+    font-size: 3rem;
     text-align: center;
   }
   main .main__grid__container {
@@ -277,9 +276,8 @@ main .main__final__text img {
     width: 100%;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
-    -ms-grid-rows: (auto)[9];
-        grid-template-rows: repeat(9, auto);
-    gap: 15px;
+    -ms-grid-rows: (1fr)[9];
+        grid-template-rows: repeat(9, 1fr);
     padding-top: 5vh;
   }
   main .main__grid__container .img-grid {
