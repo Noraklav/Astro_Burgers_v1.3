@@ -169,8 +169,6 @@ $title_mobile_size: 4rem;
     text-align: center;
     font-family: 'Lato';
 
-    
-
     #menu__title{
         margin: 2% 0;
         h1{
@@ -182,6 +180,8 @@ $title_mobile_size: 4rem;
     }
     .card{
         display: flex;
+        justify-content: center;
+        align-content: center;
         flex-wrap: wrap;
         width: 15rem;
         border: none;
@@ -189,15 +189,23 @@ $title_mobile_size: 4rem;
         padding-top: 1vh;
         padding-bottom: -1vh;
         background: none;
+        .card-body{
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+        }
         img{
             width: 12rem;
             margin: auto;
         }
-        h2{color: $black;}
+        h2{
+            color: $black;
+            font-size: 1.5rem;
+        }
         p{
             font-size: 1.7rem;
             font-weight: 600;
-            width: 40%;
+            width: 10rem;
             &:hover{
                 transform: scale(1);
             }
