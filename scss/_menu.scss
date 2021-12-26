@@ -1,17 +1,18 @@
-.active{background: var(--red);}
+.active{background: $red;}
 
-main{
+.menu__main__container{
     width: 100%;
-    background: linear-gradient(-60deg, var(--blue) 40%, var(--red));
+    background: linear-gradient(-60deg, $blue 40%, $red);
     font-family: 'Just Another Hand';
-
+    
     .menu__title {
         h1{
+            font-family: 'Just Another Hand';
             font-style: normal;
             font-weight: normal;
             font-size: 900%;
             margin: 1% 0;
-            color: var(--white);
+            color: $white;
             text-align: center;
         }
     }
@@ -30,16 +31,16 @@ main{
             justify-content: space-between;
         }
 
-        .burgers__title, .appetizers__title, .drink__title, .dessert__title{
+        .__title{
             display: flex;
             justify-content: center;
             font-weight: normal;
-            color: var(--white);
+            color: $white;
             font-size: 375%;
             text-align: center;
             text-transform: uppercase;
             width: 98%;
-            border: .3rem dashed var(--white);
+            border: .3rem dashed $white;
             padding: 1% 0;
             margin: auto;
         }
@@ -54,7 +55,7 @@ main{
             border-radius: 2.7rem;
             &:hover{
                 animation: shake .7s linear both;
-                background: var(--black);
+                background: $black;
             }
             @keyframes shake{
                 0%{transform: translateX(-15px);}
@@ -63,23 +64,24 @@ main{
                 75%{transform: translateX(7px);}
                 100%{transform: translateX(0px);}
             }
-            .burger__img__container, .appetizers__img__container, .drink__img__container, .dessert__img__container{
+            .__img__container{
                 display: flex;
                 align-items: center;
                 justify-content: center;
             }
-            .burger__content, .appetizers__content, .drink__content, .dessert__content{
+            .__content{
                 display: flex;
                 flex-flow: column;
                 width: 90%;
                 justify-content: center;
                 grid-column: 2/5;
                 text-transform: uppercase;
+                text-align: left;
                 h2{
                     font-size: 250%;
                     text-transform: uppercase;
                     font-weight: normal;
-                    color: var(--white);
+                    color: $white;
                 }
                 p{
                     font-family: 'Poppins';
@@ -87,7 +89,7 @@ main{
                     font-style: normal;
                     font-weight: 300;
                     padding: 0;
-                    color: var(--white);
+                    color: $white;
                 }
             }
             .__price{
@@ -98,7 +100,7 @@ main{
                     font-style: normal;
                     font-weight: normal;
                     font-size: 281.25%;
-                    color: var(--white);
+                    color: $white;
                 }
             }
         }

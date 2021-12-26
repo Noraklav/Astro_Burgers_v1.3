@@ -1,9 +1,9 @@
 $title_mobile_size: 4rem;
 
-.active{background: var(--red);}
+.active{background: $red;}
 
 .main__banner{
-    background-image: url(../../assets/Home/header.jpg);
+    background-image: url(../dist/assets/Home/header.jpg);
     width: 100%;
     height: 40rem;
     display: flex;
@@ -18,7 +18,7 @@ $title_mobile_size: 4rem;
         display: flex;
         align-items: center;
         justify-content: center;
-        color: var(--white);
+        color: $white;
         text-align: center;
         font-size: 200%;
         font-family: 'Montserrat';
@@ -41,7 +41,7 @@ $title_mobile_size: 4rem;
         justify-content: space-evenly;
         width: 100%;
         height: auto;
-        background-color: var(--white);
+        background-color: $white;
         align-items: center;
         .welcome__img__container{
             display: flex;
@@ -74,14 +74,14 @@ $title_mobile_size: 4rem;
                     visibility: hidden;
                     text-align: center;
                     h3{
-                        color: var(--white);
+                        color: $white;
                         font-weight: 400;
                         margin-bottom: 120px;
                         transition: all 500ms ease-out;
                     }
                     
                     p{
-                        color: var(--white);
+                        color: $white;
                         width: 85%;
                         font-weight: 300;
                         font-size: 150%;
@@ -126,7 +126,7 @@ $title_mobile_size: 4rem;
 }
 
 .info__extra{
-    background-image: url(../../assets/Home/imagen-entre-secciones.jpg);
+    background-image: url(../dist/assets/Home/imagen-entre-secciones.jpg);
 	background-position: center bottom;
 	background-size: cover;
     width: 100%;
@@ -145,7 +145,7 @@ $title_mobile_size: 4rem;
     .info__text{
         text-align: center;
         margin-top: 4%;
-        color: var(--white);
+        color: $white;
         h3{
             font-size: 250%;
             font-weight: 400;
@@ -157,7 +157,8 @@ $title_mobile_size: 4rem;
     }
 }
 
-.menu__main__container{
+#menu__main__container{
+    background: $white;
     width: 100%;
     height: 100%;
     display: flex;
@@ -166,71 +167,80 @@ $title_mobile_size: 4rem;
     justify-content: space-evenly;
     flex-flow: column;
     text-align: center;
-    background: var(--white);
     font-family: 'Lato';
-    color: var(--black);
-    .menu__title{
+
+    
+
+    #menu__title{
         margin: 2% 0;
         h1{
             margin: .1%;
             text-align: center;
             text-transform: uppercase;
+            color: $black;
         }
     }
-    #menu__card__container{
+    .card{
+        display: flex;
+        flex-wrap: wrap;
         width: 15rem;
-        background: none;
         border: none;
         transition: all .3s ease;
         padding-top: 1vh;
         padding-bottom: -1vh;
+        background: none;
         img{
             width: 12rem;
             margin: auto;
         }
-        h2{
-            color: var(--black);
-        }
+        h2{color: $black;}
         p{
             font-size: 1.7rem;
             font-weight: 600;
+            width: 40%;
+            &:hover{
+                transform: scale(1);
+            }
         }
         .card-img-center{
             animation: rotation 10s linear infinite;
             transition: all .3s;
         }
     }
+
     @keyframes rotation {
         0% {transform:rotate(0deg);}
         100% {transform:rotate(360deg);}
     }
+
     .menu__btn__fullmenu{
         display: flex;
         align-content: center;
-        background-color: var(--black);
+        background-color: $black;
         height: 10vh;
         justify-content: center;
         align-items: center;
         transition: .3s;
         text-decoration: none;
         font-size: 180%;
-        color: var(--white);
+        color: $white;
         font-weight: 300;
         font-family: 'Montserrat';
-        border: .3rem solid var(--black);
+        border: .3rem solid $black;
         margin-bottom: 5vh;
         &:hover{
-            background-color: var(--white);
-            color: var(--black);
-            border: .3rem solid var(--black);
+            background-color: $white;
+            color: $black;
+            border: .3rem solid $black;
             font-weight: 400;
+            transform: scale(1);
         }
     }
 }
 
 .gallery__main__container{
-    background: var(--black);
-    color: var(--white);
+    background: $black;
+    color: $white;
     width: 100%;
     height: auto;
     padding-top: 2%;
@@ -262,33 +272,33 @@ $title_mobile_size: 4rem;
             }
         }
         .picture-1{
-            background-image: url(../../assets/Home/gallery-1.jpg);
+            background-image: url(../dist/assets/Home/gallery-1.jpg);
             grid-column: 1/2;
             grid-row: 1/3;
         }
         .picture-2{
-            background-image: url(../../assets/Home/gallery-2.jpg);
+            background-image: url(../dist/assets/Home/gallery-2.jpg);
             grid-column: 2/4;
             grid-row: 1/2;
         }
         .picture-3{
-            background-image: url(../../assets/Home/gallery-4.jpg);
+            background-image: url(../dist/assets/Home/gallery-4.jpg);
             grid-column: 2/3;
             grid-row: 2/3;
         }
         .picture-4{
-            background-image: url(../../assets/Home/gallery-5.jpg);
+            background-image: url(../dist/assets/Home/gallery-5.jpg);
             grid-column: 3/4;
             grid-row: 2/3;
         }
         .picture-5{
-            background-image: url(../../assets/Home/gallery-3.jpg);
+            background-image: url(../dist/assets/Home/gallery-3.jpg);
             grid-column: 1/2;
             grid-row: 3/4;
         }
         
         .picture-6{
-            background-image: url(../../assets/Home/gallery-6.jpg);
+            background-image: url(../dist/assets/Home/gallery-6.jpg);
             grid-column: 2/4;
             grid-row: 3/4;
         }
@@ -304,7 +314,7 @@ $title_mobile_size: 4rem;
         .banner__text__container{
             width: 75%;
             font-size: 160%;
-            border: .5rem solid var(--white);
+            border: .5rem solid $white;
         }
     }
 
@@ -313,9 +323,12 @@ $title_mobile_size: 4rem;
         flex-flow: column wrap;
         .welcome__text__container{
             width: 100%;
-            text-align: center;
+            text-align: justify;
             align-items: center;
             padding-bottom: 1rem;
+            span{
+                text-align: center;
+            }
         }
     }
 

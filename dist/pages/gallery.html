@@ -7,17 +7,15 @@
     <link rel="icon" href="../assets/Logo/Logo-SVG.svg">    
     <!-- STYLES -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="../scss/contact.css">
-    <link rel="stylesheet" href="../scss/header.css">
-    <link rel="stylesheet" href="../scss/footer.css">
-    <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/pre-styles.css">
+    <link rel="stylesheet" href="../../scss/main.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Astro Burgers</title>
 </head>
 <body>
     <header>
         <nav class="navbar container-fluid navbar-expand-lg navbar-light fixed-top" id="nav-bar-container">
-            <a class="navbar-brand" href="index.html"><img src="../../assets/Logo/Logo-Header.svg" alt=""></a>
+            <a class="navbar-brand" href="index.html"><img src="../assets/Logo/Logo-Header.svg" alt=""></a>
             
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -34,10 +32,10 @@
                     <li class="nav-item mx-2 px-3">
                         <a class="nav-link text-white" href="menu.html">Menu</a>
                     </li>
-                    <li class="nav-item mx-2 px-3">
+                    <li class="nav-item mx-2 px-3 active">
                         <a class="nav-link text-white" href="gallery.html">Gallery</a>
                     </li>
-                    <li class="nav-item mx-2 px-3 active">
+                    <li class="nav-item mx-2 px-3">
                         <a class="nav-link text-white" href="contact.html">Contact</a>
                     </li>
                 </ul>
@@ -45,50 +43,53 @@
         </nav>
     </header>
 
-    <main>
-        <div class="header-filler"></div>
-                
-        <div class="contact__main__container">
-            
-            <div class="astro__img"><img src="../../assets/Contact/Illustration.svg" alt="astro-fishing-an-astro_burger"></div>
-            
-            <div class="contact__form__container">
-                <div class="section__form__title">
-                    <h1 class="display-2 my-2">Contact <span class="px-2 font-weight-bold">Us</span></h1>
-                </div>
-                <form action="#" class="form-group">
-                    <!-- Fullname -->
-                    <label for="fullname">Cual es  <span class="mx-1 px-1 font-weight-bolder">tu nombre</span>?</label>
-                    <input type="text" name="fullname" id="fullname" placeholder="Nombre y Apellido" required>
-                    <!-- Email -->
-                        <label for="email"><span class="mx-1 px-1 font-weight-bolder">Tu mejor</span> correo electronico</label>
-                        <input type="email" name="email" id="email" placeholder="Correo Electronico" required>
-                    <!-- Question -->
-                        <label for="question">Como <span class="mx-1 px-1 font-weight-bolder">podemos ayudarte</span>?</label>
-                        <textarea required name="question" id="question" cols="50" rows="12" maxlength="500" placeholder="Ingresa tu consulta en 500 caracteres o menos"></textarea>
-                    <!-- Button -->
-                    <button class="btn">Enviar</button>
-                </form>
-                <div class="astro__img__mobile"><img src="../../assets/Contact/Illustration.svg" alt="astro-fishing-an-astro_burger"></div>
-            </div>
+    <main class="p-0 m-0 w-100">
+        <div class="main__title__container m-0 p-0">
+            <h1 class="main__title">Echale un vistazo a nuestras hamburguesas</h1>
         </div>
+        
+        
+        <div class="main__grid__container">
+            <!-- Bloque 1 -->
+            <div class="grid__img-1 img-grid" data-aos="fade-up-right"></div>
+            <div class="img-1 img-grid" data-aos="fade-down"></div>
+            <div class="img-2 img-grid" data-aos="flip-up"></div>
+            <div class="img-3 img-grid" data-aos="zoom-in"></div>
+            <div class="img-4 img-grid" data-aos="zoom-out"></div>
+            <div class="img-5 img-grid" data-aos="fade-right"></div>
+            
+                <!-- Bloque 2 -->
+            <div class="img-6 img-grid" data-aos="flip-right"></div>
+            <div class="img-grid grid__img-2" data-aos="fade-down"></div>
+            
+            <!-- Bloque 3 -->
+            <div class="img-7 img-grid" data-aos="flip-up"></div>
+            <div class="img-8 img-grid" data-aos="zoom-in-up"></div>
+            <div class="img-grid grid__img-3" data-aos="flip-left"></div>
+            <div class="img-9 img-grid" data-aos="fade-up"></div>
+        </div>
+        
+        <div class="main__final__text" data-aos="zoom-in">
+            <span>We will wait <br> for you IN...</span>
+            <img src="../assets/Logo/Logo-Header.svg" alt="logo">
+        </div>        
     </main>
-
+    
     <footer>
         <div class="footer__main__container">
             <!-- CONTACTO -->
-            <img class="logo-footer" src="../../assets/Footer/footer-logo.svg" alt="">
+            <img class="logo-footer" src="../../dist/assets/Footer/footer-logo.svg" alt="">
             <div class="footer__contact__container">
                 <div class="footer__contact__data">
                     <h2>Contactanos</h2>
                     <div class="contact__data">
-                        <img src="../../assets/Footer/contact/bx-mail-send.svg" alt="icono-correo"><a href="mailto:reserves@astroburgers.com" target="_blank">reserves@astroburgers.com</a>
+                        <i class="icon fas fa-envelope"></i><a href="mailto:reserves@astroburgers.com" target="_blank">reserves@astroburgers.com</a>
                     </div>
                     <div class="contact__data">
-                        <img src="../../assets/Footer/contact/bxl-whatsapp.svg" alt="icono-whatsapp"><a href="https://wa.me/+13057545816" target="_blank">+1 305-754-5816</a>
+                        <i class="icon fab fa-whatsapp"></i><a href="https://wa.me/+13057545816" target="_blank">+1 305-754-5816</a>
                     </div>
                     <div class="contact__data">
-                        <img src="../../assets/Footer/contact/bxs-map.svg" alt="icono-correo">
+                        <i class="icon fas fa-map-marker-alt"></i>
                         <div>
                             <p>1518 Arbutus Drive<br>Miami, FL 33147</p>
                         </div>
@@ -125,25 +126,25 @@
                 </div>
             </div>
 
-            <div id="footer__mobile" class="d-sm-flex pb-5 w-75 justify-content-center d-lg-none">
+            <div class="footer__mobile d-flex pb-5 w-75 justify-content-center d-lg-none">
                 <!-- Instagram -->
-                <div class="social__media__data__mobile mx-2">
+                <div class="social__media__data__mobile">
                     <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram" id="social__link"></i></a><a href="https://www.instagram.com/astro.burgers/" target="_blank"></a></i>
                 </div>
                 <!-- Twitter -->
-                <div class="social__media__data__mobile mx-2">
+                <div class="social__media__data__mobile">
                     <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter" id="social__link"></i></a>
                 </div>
                 <!-- Linkedin -->
-                <div class="social__media__data__mobile mx-2">
+                <div class="social__media__data__mobile">
                     <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin" id="social__link"></i></a>
                 </div>
                 <!-- Youtube -->
-                <div class="social__media__data__mobile mx-2">
+                <div class="social__media__data__mobile">
                     <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube" id="social__link"></i></a>
                 </div>
                 <!-- Twitch -->
-                <div class="social__media__data__mobile mx-2">
+                <div class="social__media__data__mobile">
                     <a href="https://www.twitch.com/" target="_blank"><i class="fab fa-twitch" id="social__link"></i></a>
                 </div>
             </div>
@@ -156,5 +157,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
 </body>
 </html>
