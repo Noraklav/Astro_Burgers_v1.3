@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="assets/Logo/Logo-SVG.svg">    
+    <link rel="icon" href="dist/assets/Logo/Logo-SVG.svg">    
     <!-- STYLES -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="../scss/main.css">
+    <link rel="stylesheet" href="scss/main.css">
     <link rel="stylesheet" href="css/normalize.css">
     <title>Astro Burgers</title>
 </head>
 <body>
     <header>
         <nav class="navbar container-fluid navbar-expand-lg navbar-light fixed-top" id="nav-bar-container">
-            <a class="navbar-brand" href="index.html"><img src="assets/Logo/Logo-Header.svg" alt=""></a>
+            <a class="navbar-brand" href="index.html"><img src="dist/assets/Logo/Logo-Header.svg" alt=""></a>
             
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -26,16 +26,16 @@
                         <a class="nav-link text-white" href="index.html">Home</a>
                     </li>
                     <li class="nav-item mx-2 px-3">
-                        <a class="nav-link text-white" href="pages/about.html">About</a>
+                        <a class="nav-link text-white" href="dist/pages/about.html">About</a>
                     </li>
                     <li class="nav-item mx-2 px-3">
-                        <a class="nav-link text-white" href="pages/menu.html">Menu</a>
+                        <a class="nav-link text-white" href="dist/pages/menu.html">Menu</a>
                     </li>
                     <li class="nav-item mx-2 px-3">
-                        <a class="nav-link text-white" href="pages/gallery.html">Gallery</a>
+                        <a class="nav-link text-white" href="dist/pages/gallery.html">Gallery</a>
                     </li>
                     <li class="nav-item mx-2 px-3">
-                        <a class="nav-link text-white" href="pages/contact.html">Contact</a>
+                        <a class="nav-link text-white" href="dist/pages/contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -54,7 +54,7 @@
         <section class="welcome__main__container">
             <div class="welcome__container ">
                 <div class="welcome__text__container text-md-left w-md-100">
-                    <span>Bienvenido a <b>Astro Burgers</b></span>
+                    <span id="welcome_to_title">Bienvenido a <b>Astro Burgers</b></span>
                     <p>
                         En ASTRO BURGERS reinventamos la hamburguesa, homenajeando a su creador Goku Astro, un inmigrante del planeta Vegeta, quien crea en 1895 la primera hamburguesa de la tierra. Reformulamos la receta original, desarrollando hamburguesas modernas, llenas de sabor, de estilo casero, usando los mejores ingredientes frescos y naturales. 
                     </p>
@@ -65,13 +65,13 @@
 
                 <div class="container-fluid welcome__img__container">
                     <figure>
-                        <img src="assets/Home/welcome-to-AB.jpg">
+                        <img src="dist/assets/Home/welcome-to-AB.jpg">
                         <div class="capa">
                             <h3 class="display-3">Disfruta tu visita!</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam magni aliquam saepe odit, ab expedita voluptas suscipit dolorem voluptatem repellat!</p>
                         </div>
                     </figure>
-                    <div class="d-sm-none"><img id="welcome__img__mobile" src="assets/Home/welcome-to-AB.jpg" alt=""></div>
+                    <div class="d-sm-none"><img id="welcome__img__mobile" src="dist/assets/Home/welcome-to-AB.jpg" alt=""></div>
                 </div>
 
             </div>

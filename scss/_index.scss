@@ -108,9 +108,9 @@ $title_mobile_size: 4rem;
             justify-content: space-evenly;
             width: 70%;
             height: 100%;
-            span{
+            #welcome_to_title{
+                font-family: sans-serif;
                 font-size: 200%;
-                font-family: 'Saira';
                 font-weight: 300;
             }
             p{
