@@ -2,16 +2,13 @@
 
 .menu__main__container{
     width: 100%;
-    background: linear-gradient(-60deg, $blue 40%, $red);
-    font-family: 'Just Another Hand';
-    
+    background: $black;
     .menu__title {
         h1{
-            font-family: 'Just Another Hand';
+            font-family: $font-mont;
             font-style: normal;
-            font-weight: normal;
-            font-size: 900%;
-            margin: 1% 0;
+            font-weight: map-get($font-weights, 'light');
+            font-size: 7.5rem;
             color: $white;
             text-align: center;
         }
@@ -24,6 +21,11 @@
         justify-content: space-evenly;
         margin: auto;
         flex-wrap: wrap;
+        
+        .menu__container{
+            // border: .15rem dashed $white;
+            text-align: center;
+        }
 
         .menu__section__2{
             display: flex;
@@ -35,59 +37,60 @@
             display: flex;
             justify-content: center;
             font-weight: normal;
-            color: $white;
+            color: $black;
+            background: $white;
             font-size: 375%;
             text-align: center;
             text-transform: uppercase;
-            width: 98%;
-            border: .3rem dashed $white;
+            width: 100%;
+            font-family: $font-mont;
             padding: 1% 0;
             margin: auto;
         }
-        .burger__container, .appetizers__container, .drink__container, .dessert__container{
+        .__container{
             display: grid;
-            grid-template-columns: repeat(5, 1fr);
+            grid-template-columns: repeat(4, 1fr);
             grid-template-rows: repeat(1, 1fr);
             width: 100%;
-            padding: 4% 0;
-            margin: 1% 0;
+            padding: .7rem 0;
+            // margin: 1% 0;
             transition: all .3s ease-in;
-            border-radius: 2.7rem;
-            &:hover{
-                animation: shake .7s linear both;
-                background: $black;
-            }
-            @keyframes shake{
-                0%{transform: translateX(-15px);}
-                25%{transform: translateX(15px);}
-                50%{transform: translateX(-7px);}
-                75%{transform: translateX(7px);}
-                100%{transform: translateX(0px);}
-            }
-            // .__img__container{
-            //     display: flex;
-            //     align-items: center;
-            //     justify-content: center;
+            // border-radius: 2.7rem;
+            justify-items: center;
+            font-family: $font-mont;
+
+            // No sacar por si me arrepiento
+            // &:hover{
+            //     animation: shake .7s linear both;
+            //     background: $black;
             // }
+            // @keyframes shake{
+            //     0%{transform: translateX(-15px);}
+            //     25%{transform: translateX(15px);}
+            //     50%{transform: translateX(-7px);}
+            //     75%{transform: translateX(7px);}
+            //     100%{transform: translateX(0px);}
+            // }
+
             .__content{
                 display: flex;
                 flex-flow: column;
                 width: 90%;
                 justify-content: center;
-                grid-column: 2/5;
+                grid-column: 1/4;
                 text-transform: uppercase;
                 text-align: left;
                 h2{
-                    font-size: 250%;
+                    font-size: 1.5rem;
                     text-transform: uppercase;
-                    font-weight: normal;
+                    font-weight: map-get($font-weights, 'bold');
                     color: $white;
                 }
                 p{
-                    font-family: 'Poppins';
-                    font-size: 100%;
+                    // font-family: 'Poppins';
+                    font-size: .8rem;
                     font-style: normal;
-                    font-weight: 300;
+                    font-weight: map-get($font-weights, 'light');
                     padding: 0;
                     color: $white;
                 }
@@ -98,8 +101,8 @@
                 justify-content: center;
                 p{
                     font-style: normal;
-                    font-weight: normal;
-                    font-size: 281.25%;
+                    font-weight: map-get($font-weights, 'normal');
+                    font-size: 1.5rem;
                     color: $white;
                 }
             }
