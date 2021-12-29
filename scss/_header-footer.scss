@@ -1,10 +1,11 @@
 // Header
 #nav-bar-container{
     background: $black;
-    li{
+	li{
         transition: .3s;
         &:hover{
             background: $red;
+			filter: drop-shadow(7px 7px orchid);
         }
         a{
             font-size: 1.3rem;
@@ -55,7 +56,7 @@ footer {
 	}
 }
 .logo-footer {
-	width: 200px;
+	width: 300px;
 }
 .contact__data {
 	display: flex;

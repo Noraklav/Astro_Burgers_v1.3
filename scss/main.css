@@ -19,6 +19,8 @@ body::-webkit-scrollbar-thumb {
 
 #nav-bar-container li:hover {
   background: #d90429;
+  -webkit-filter: drop-shadow(7px 7px orchid);
+          filter: drop-shadow(7px 7px orchid);
 }
 
 #nav-bar-container li a {
@@ -93,7 +95,7 @@ footer {
 }
 
 .logo-footer {
-  width: 200px;
+  width: 300px;
 }
 
 .contact__data {
@@ -498,9 +500,9 @@ footer {
 
 .welcome__main__container .welcome__container .welcome__img__container figure .capa p {
   color: #edf2f4;
-  width: 85%;
+  width: 90%;
   font-weight: 300;
-  font-size: 150%;
+  font-size: 2rem;
   -webkit-transition: all 500ms ease-out;
   transition: all 500ms ease-out;
   margin: auto;
@@ -538,13 +540,16 @@ footer {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   width: 70%;
-  height: 100%;
+  height: 70vh;
 }
 
-.welcome__main__container .welcome__container .welcome__text__container #welcome_to_title {
-  font-family: sans-serif;
-  font-size: 200%;
-  font-weight: 300;
+.welcome__main__container .welcome__container .welcome__text__container h3 {
+  font-size: 230%;
+  font-weight: 100;
+}
+
+.welcome__main__container .welcome__container .welcome__text__container h3 b {
+  text-transform: uppercase;
 }
 
 .welcome__main__container .welcome__container .welcome__text__container p {
@@ -554,7 +559,7 @@ footer {
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
-  font-size: 130%;
+  font-size: 150%;
   font-weight: 300;
   font-family: 'Lato';
   width: 90%;
@@ -630,12 +635,15 @@ footer {
   font-family: 'Lato';
 }
 
-#menu__main__container #menu__title {
+#menu__main__container .__title {
   margin: 2% 0;
 }
 
-#menu__main__container #menu__title h1 {
+#menu__main__container .__title h1 {
   margin: .1%;
+  font-size: 4rem;
+  font-weight: 300;
+  text-transform: capitalize;
   text-align: center;
   text-transform: uppercase;
   color: #1e1f1f;
@@ -766,12 +774,15 @@ footer {
   padding-top: 2%;
 }
 
-.gallery__main__container .gallery__title {
+.gallery__main__container .__title {
   text-align: center;
 }
 
-.gallery__main__container .gallery__title h1 {
+.gallery__main__container .__title h1 {
   margin: .1%;
+  font-size: 4rem;
+  font-weight: 300;
+  text-transform: capitalize;
   text-align: center;
   text-transform: uppercase;
 }
@@ -782,7 +793,7 @@ footer {
   padding: 2% 0;
   max-width: 100%;
   width: 100%;
-  height: 50rem;
+  height: 150vh;
   gap: 10px;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
@@ -792,7 +803,8 @@ footer {
 
 .gallery__main__container .gallery__container .grid__picture {
   background-size: cover;
-  background-position: center;
+  background-position: center center;
+  background-repeat: no-repeat;
   -webkit-filter: grayscale(0.8);
           filter: grayscale(0.8);
   -webkit-transition: all .4s ease;
@@ -1062,11 +1074,16 @@ footer {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
   background: #edf2f4;
+}
+
+.about__main__container .about__title h1 {
+  font-size: 4rem;
+  font-weight: 300;
+  text-transform: capitalize;
+  text-align: center;
 }
 
 .about__main__container section {
@@ -1088,55 +1105,25 @@ footer {
       grid-template-rows: 1fr;
   width: 100%;
   height: auto;
+  justify-items: center;
 }
 
-.about__main__container section .about__content .pictures__container {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-  -ms-grid-rows: (1fr)[2];
-      grid-template-rows: repeat(2, 1fr);
-  width: 100%;
-  height: 45rem;
-  row-gap: 1.2%;
-  -webkit-column-gap: 1.5%;
-          column-gap: 1.5%;
+.about__main__container section .about__content .picture__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 80%;
+  height: auto;
 }
 
-.about__main__container section .about__content .pictures__container .picture {
+.about__main__container section .about__content .picture__container img {
   background-size: cover;
+  background-position: center center;
   background-repeat: no-repeat;
-  background-position: center;
-}
-
-.about__main__container section .about__content .pictures__container .picture-1 {
-  background-image: url(../dist/assets/About_Us/gallery-1.jpg);
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-column: 1/3;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1/2;
-}
-
-.about__main__container section .about__content .pictures__container .picture-2 {
-  background-image: url(../dist/assets/About_Us/gallery-2.jpg);
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1/2;
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  grid-row: 2/3;
-}
-
-.about__main__container section .about__content .pictures__container .picture-3 {
-  background-image: url(../dist/assets/About_Us/gallery-3.jpg);
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2/3;
-  -ms-grid-row: 2;
-  grid-row: 2/2;
+  width: 100%;
 }
 
 .about__main__container section .about__content .about__flex__text {
@@ -1164,9 +1151,9 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
   text-align: center;
 }
@@ -1180,7 +1167,9 @@ footer {
 }
 
 .about__main__container section .about__content .about__flex__text .info__title p {
-  font-size: 1.15rem;
+  width: 75%;
+  font-size: 1.25rem;
+  margin: auto;
 }
 
 .about__main__container .section-2 {
@@ -1211,7 +1200,7 @@ footer {
   background: rgba(30, 31, 31, 0.5);
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
   .about__main__container #section__1__container {
     display: -ms-grid;
     display: grid;
@@ -1230,36 +1219,16 @@ footer {
     width: 100%;
     height: auto;
   }
-  .about__main__container #section__1__container .about__content .pictures__container {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    grid-area: galeria;
-    display: -ms-grid;
-    display: grid;
-    width: 100%;
-    height: auto;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-    -ms-grid-rows: (1fr)[2];
-        grid-template-rows: repeat(2, 1fr);
-  }
-  .about__main__container #section__1__container .about__content .pictures__container img {
+  .about__main__container #section__1__container .about__content .picture__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     width: 100%;
     height: auto;
   }
-  .about__main__container #section__1__container .about__content .pictures__container .picture {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  .about__main__container #section__1__container .about__content .pictures__container .picture-1 {
-    background-image: url(../../dist/assets/About_Us/gallery-1.jpg);
-  }
-  .about__main__container #section__1__container .about__content .pictures__container .picture-2 {
-    background-image: url(../../dist/assets/About_Us/gallery-2.jpg);
-  }
-  .about__main__container #section__1__container .about__content .pictures__container .picture-3 {
-    background-image: url(../../dist/assets/About_Us/gallery-3.jpg);
+  .about__main__container #section__1__container .about__content .picture__container img {
+    width: 100%;
+    height: auto;
   }
   .about__main__container #section__1__container .about__content .about__flex__text {
     -ms-grid-row: 2;
@@ -1291,20 +1260,6 @@ footer {
     height: auto;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-  }
-  #section__1__container .about__content .about__flex__text .dropdown {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  #section__1__container .about__content .about__flex__text .dropdown-menu p {
-    font-size: .5rem;
-  }
-  #section__1__container .about__content .about__flex__text .dropdown #dropdownMenuButton span {
-    font-size: 1rem;
   }
 }
 
@@ -1440,18 +1395,6 @@ footer {
   }
 }
 
-.menu__main__container .menu__food__container .burger__container .__img__container, .menu__main__container .menu__food__container .appetizers__container .__img__container, .menu__main__container .menu__food__container .drink__container .__img__container, .menu__main__container .menu__food__container .dessert__container .__img__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .menu__main__container .menu__food__container .burger__container .__content, .menu__main__container .menu__food__container .appetizers__container .__content, .menu__main__container .menu__food__container .drink__container .__content, .menu__main__container .menu__food__container .dessert__container .__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1506,7 +1449,7 @@ footer {
   color: #edf2f4;
 }
 
-@media screen and (max-width: 762px) {
+@media screen and (max-width: 768px) {
   .menu__main__container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1561,7 +1504,7 @@ main .main__title__container {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  height: 50vh;
+  height: 100vh;
   margin: auto;
 }
 
@@ -1831,6 +1774,7 @@ main .main__final__text img {
   main .main__grid__container .img-grid {
     background-size: cover;
     background-position: center center;
+    background-repeat: no-repeat;
   }
   main .main__grid__container .grid__img-1 {
     background-image: url(../dist/assets/Gallery/grid-img-1.jpg);
@@ -1842,6 +1786,7 @@ main .main__final__text img {
     grid-row: 1/3;
     background-size: cover;
     background-position: center center;
+    background-repeat: no-repeat;
   }
   main .main__grid__container .img-1 {
     background-image: url(../dist/assets/Gallery/img-1.jpg);
@@ -1906,6 +1851,7 @@ main .main__final__text img {
     grid-row: 5/6;
     background-size: cover;
     background-position: center center;
+    background-repeat: no-repeat;
   }
   main .main__grid__container .img-7 {
     background-image: url(../dist/assets/Gallery/img-7.jpg);
@@ -1934,6 +1880,7 @@ main .main__final__text img {
     grid-row: 5/7;
     background-size: cover;
     background-position: center center;
+    background-repeat: no-repeat;
   }
   main .main__grid__container .img-9 {
     background-image: url(../dist/assets/Gallery/img-9.jpg);

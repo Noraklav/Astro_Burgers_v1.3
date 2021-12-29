@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO -->
+    <meta name="description" content="En astro burgers nos dedicamos a hacer hamburguesas de otra galaxia">
+    <meta name="keywords" content="astro, astro burgers, hamburguesas, hamburguesa, burgers, galaxia, comida, mejor hamburgueseria">
+
     <link rel="icon" href="dist/assets/Logo/Logo-SVG.svg">    
     <!-- STYLES -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -14,7 +18,7 @@
 <body>
     <header>
         <nav class="navbar container-fluid navbar-expand-lg navbar-light fixed-top" id="nav-bar-container">
-            <a class="navbar-brand" href="index.html"><img src="dist/assets/Logo/Logo-Header.svg" alt=""></a>
+            <a class="navbar-brand" href="index.html"><img src="dist/assets/Logo/Logo-Header.svg" alt="astro burgers logo"></a>
             
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -23,19 +27,19 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav" id="nav-bar">
                     <li class="nav-item mx-2 px-3 active">
-                        <a class="nav-link text-white" href="index.html">Home</a>
+                        <a class="nav-link text-white" href="index.html">Inicio</a>
                     </li>
                     <li class="nav-item mx-2 px-3">
-                        <a class="nav-link text-white" href="dist/pages/about.html">About</a>
+                        <a class="nav-link text-white" href="dist/pages/about.html">Nosotros</a>
                     </li>
                     <li class="nav-item mx-2 px-3">
                         <a class="nav-link text-white" href="dist/pages/menu.html">Menu</a>
                     </li>
                     <li class="nav-item mx-2 px-3">
-                        <a class="nav-link text-white" href="dist/pages/gallery.html">Gallery</a>
+                        <a class="nav-link text-white" href="dist/pages/gallery.html">Galeria</a>
                     </li>
                     <li class="nav-item mx-2 px-3">
-                        <a class="nav-link text-white" href="dist/pages/contact.html">Contact</a>
+                        <a class="nav-link text-white" href="dist/pages/contact.html">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -54,9 +58,9 @@
         <section class="welcome__main__container">
             <div class="welcome__container ">
                 <div class="welcome__text__container text-md-left w-md-100">
-                    <span id="welcome_to_title">Bienvenido a <b>Astro Burgers</b></span>
+                    <h3 id="welcome_to_title">Bienvenido a <b>Astro Burgers</b></h3>
                     <p>
-                        En ASTRO BURGERS reinventamos la hamburguesa, homenajeando a su creador Goku Astro, un inmigrante del planeta Vegeta, quien crea en 1895 la primera hamburguesa de la tierra. Reformulamos la receta original, desarrollando hamburguesas modernas, llenas de sabor, de estilo casero, usando los mejores ingredientes frescos y naturales. 
+                        En ASTRO BURGERS reinventamos la hamburguesa, homenajeando a su creador Astro Goku, un inmigrante del planeta Vegeta, quien crea en 1895 la primera hamburguesa de la tierra. Reformulamos la receta original, desarrollando hamburguesas modernas, llenas de sabor, de estilo casero, usando los mejores ingredientes frescos y naturales. 
                     </p>
                     <p>
                         Presentadas en un pan casero especial de elaboración propia. Tenemos una propuesta innovadora de Pop-up Stores montados en contenedores reciclados, totalmente equipados, que prometen al visitante una experiencia gastronómica única, garantizando la calidad y la originalidad de nuestros productos. 
@@ -68,7 +72,7 @@
                         <img src="dist/assets/Home/welcome-to-AB.jpg">
                         <div class="capa">
                             <h3 class="display-3">Disfruta tu visita!</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam magni aliquam saepe odit, ab expedita voluptas suscipit dolorem voluptatem repellat!</p>
+                            <p>Vas a venir para nunca mas querer irte... Unas hamburguesas de otra galaxia que van a hacer que quieras comer mas y mas</p>
                         </div>
                     </figure>
                     <div class="d-sm-none"><img id="welcome__img__mobile" src="dist/assets/Home/welcome-to-AB.jpg" alt=""></div>
@@ -92,7 +96,7 @@
         <div class="info__container info2">
             <img src="dist/assets/Home/Clock.svg" alt="">
             <div class="info__text">
-                <h3>15 Years</h3>
+                <h3>15 Años</h3>
                 <span>De servicio de calidad</span>
             </div>
         </div>
@@ -110,8 +114,8 @@
 
     <!-- Menu -->
     <section class="menu__main__container" id="menu__main__container">
-        <div id="menu__title">
-            <h1 class="display-1 px-3 py-1">MENU</h1>
+        <div class="__title">
+            <h1 class="px-3">MENU</h1>
         </div>
 
         <div class="container-fluid" >
@@ -174,13 +178,13 @@
                 </div>
             </div>
         </div>
-        <a class="menu__btn__fullmenu px-5" href="pages/menu.html">Ir al Menu</a>
+        <a class="menu__btn__fullmenu px-5" href="dist/pages/menu.html">Ir al Menu</a>
     </section>
     
     <!-- Gallery -->
     <section class="gallery__main__container">
-        <div class="gallery__title">
-            <h1 class="display-1 px-3 py-1 my-5">Galeria</h1>
+        <div class="__title">
+            <h1 class="px-3">Galeria</h1>
         </div>
 
         <div class="gallery__container">

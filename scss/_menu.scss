@@ -64,11 +64,11 @@
                 75%{transform: translateX(7px);}
                 100%{transform: translateX(0px);}
             }
-            .__img__container{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
+            // .__img__container{
+            //     display: flex;
+            //     align-items: center;
+            //     justify-content: center;
+            // }
             .__content{
                 display: flex;
                 flex-flow: column;
@@ -107,7 +107,20 @@
     }
 }
 
-@media screen and (max-width: 762px){
+@media screen and (min-width: 1201px){
+    // Disponible en la Tercer Engrega
+}
+
+@media screen and (max-width: 1200px){
+    // Disponible en la Tercer Engrega
+}
+
+@media screen and (max-width: 1024px){
+    // Disponible en la Tercer Engrega
+}
+
+
+@media screen and (max-width: 768px){
     .menu__main__container{
         display: flex;
         flex-flow: column;

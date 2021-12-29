@@ -5,6 +5,13 @@ $white: rgb(237,242,244);
 $blue: rgb(37,56,86);
 $red: rgb(217,4,41);
 
+$font-weights: (
+    "light": 300,
+    "regular": 400,
+    "medium": 500,
+    "bold": 700
+);
+
 body::-webkit-scrollbar{
     width: 12px;
     background-color: $black;
@@ -17,4 +24,13 @@ body::-webkit-scrollbar-thumb{
 @mixin bg-config{
     background-size: cover;
     background-position: center center;
+    background-repeat: no-repeat;
 }
+
+@mixin title-section{
+    font-size: 4rem;
+    font-weight: map-get($font-weights, light);
+    text-transform: capitalize;
+    text-align: center;
+}
+
