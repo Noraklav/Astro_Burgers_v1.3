@@ -342,12 +342,13 @@ $title_mobile_size: 4rem;
     .welcome__container{
         display: flex;
         flex-flow: column wrap;
+        height: auto;
         .welcome__text__container{
             width: 100%;
             text-align: justify;
             align-items: center;
             padding-bottom: 1rem;
-            span{
+            p{
                 text-align: center;
             }
         }
@@ -418,6 +419,8 @@ $title_mobile_size: 4rem;
                     text-align: justify;
                     align-items: center;
                     padding-top: 1rem;
+                    font-size: 1rem;
+
                 }
             }
 
