@@ -36,3 +36,6 @@ body::-webkit-scrollbar-thumb{
     text-align: center;
 }
 
+@mixin transition-ease{
+    transition: all .3s ease;
+}

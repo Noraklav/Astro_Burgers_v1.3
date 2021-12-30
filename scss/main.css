@@ -110,7 +110,19 @@ footer {
 }
 
 .contact__data .icon {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
+}
+
+.contact__data .fa-envelope {
+  color: #1e1f1f;
+}
+
+.contact__data .fa-whatsapp {
+  color: #01b670;
+}
+
+.contact__data .fa-map-marker-alt {
+  color: #d90429;
 }
 
 .contact__data a {
@@ -186,9 +198,13 @@ footer {
 }
 
 .copy a {
-  color: gold;
-  border-bottom: 1px solid gold;
+  color: #1e1f1f;
+  background: gold;
   text-decoration: none;
+  font-weight: 700;
+  padding: 0 5px;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
 }
 
 @media screen and (max-width: 768px) {
@@ -1477,7 +1493,7 @@ main .main__title__container {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   margin: auto;
 }
 

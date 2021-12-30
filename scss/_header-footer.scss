@@ -64,8 +64,17 @@ footer {
 	padding: 10px;
     font-size: 1.15rem;
     .icon{
-        font-size: 1.5rem;
+        font-size: 1.7rem;
     }
+	.fa-envelope{
+		color: $black;
+	}
+	.fa-whatsapp{
+		color: #01b670;
+	}
+	.fa-map-marker-alt{
+		color: $red
+	}
 	a {
 		text-decoration: none;
 		padding-left: 15px;
@@ -118,9 +127,13 @@ footer {
 	background: $black;
 	color: $white;
 	a{
-		color: gold;
-		border-bottom: 1px solid gold;
+		color: $black;
+		background: gold;
 		text-decoration: none;
+		font-weight: map-get($font-weights, 'bold');
+		padding: 0 5px;
+		@include transition-ease;
+		
 	}
 }
 
