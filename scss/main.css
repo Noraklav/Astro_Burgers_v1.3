@@ -1010,6 +1010,7 @@ footer {
         -ms-flex-flow: column wrap;
             flex-flow: column wrap;
     width: 100%;
+    height: auto;
   }
   .welcome__main__container .welcome__container .welcome__text__container span {
     text-align: center;
