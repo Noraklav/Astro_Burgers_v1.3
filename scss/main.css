@@ -900,6 +900,7 @@ footer {
   }
   .welcome__container .welcome__text__container {
     width: 100%;
+    height: auto;
     text-align: justify;
     -webkit-box-align: center;
         -ms-flex-align: center;
