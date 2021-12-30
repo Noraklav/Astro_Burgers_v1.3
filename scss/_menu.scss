@@ -137,7 +137,20 @@
 }
 
 @media screen and (max-width: 480px){
-    #prices__480{
-        padding-right: 25px;
+    .menu__main__container{
+        margin-top: 1.5rem;
+        .menu__title{
+            h1{
+                font-size: 5rem;
+            }
+        }
+        .menu__food__container{
+            .__title{
+                display: flex;
+                justify-content: center;
+                font-size: 2.5rem;
+                width: 100%;
+            }
+        }
     }
 }

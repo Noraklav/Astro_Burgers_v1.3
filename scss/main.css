@@ -1119,6 +1119,7 @@ footer {
           justify-content: center;
   width: 80%;
   height: auto;
+  border: 0.5rem solid #1e1f1f;
 }
 
 .about__main__container section .about__content .picture__container img {
@@ -1421,8 +1422,21 @@ footer {
 }
 
 @media screen and (max-width: 480px) {
-  #prices__480 {
-    padding-right: 25px;
+  .menu__main__container {
+    margin-top: 1.5rem;
+  }
+  .menu__main__container .menu__title h1 {
+    font-size: 5rem;
+  }
+  .menu__main__container .menu__food__container .__title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 2.5rem;
+    width: 100%;
   }
 }
 
