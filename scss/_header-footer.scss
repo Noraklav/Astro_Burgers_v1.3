@@ -117,6 +117,11 @@ footer {
 	padding: 7px 0 7px 0;
 	background: $black;
 	color: $white;
+	a{
+		color: gold;
+		border-bottom: 1px solid gold;
+		text-decoration: none;
+	}
 }
 
 @media screen and (max-width: 768px) {

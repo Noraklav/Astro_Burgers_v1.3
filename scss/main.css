@@ -185,6 +185,12 @@ footer {
   color: #edf2f4;
 }
 
+.copy a {
+  color: gold;
+  border-bottom: 1px solid gold;
+  text-decoration: none;
+}
+
 @media screen and (max-width: 768px) {
   .logo-footer, .footer__map__container, .social__media__data a {
     display: none;
