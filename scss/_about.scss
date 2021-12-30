@@ -40,15 +40,13 @@
             .about__flex__text{
                 display: flex;
                 flex-flow: column;
+                width: 100%;
                 padding: 3% 1%;
                 justify-content: space-between;
                 align-content: flex-start;
-                width: 100%;
                 .info__title{
-                    display: flex;
-                    flex-flow: column wrap;
+                    @extend  .about__flex__text;
                     justify-content: center;
-                    width: 100%;
                     text-align: center;
                     h3{
                         background: $black;

@@ -1153,7 +1153,7 @@ footer {
   width: 100%;
 }
 
-.about__main__container section .about__content .about__flex__text {
+.about__main__container section .about__content .about__flex__text, .about__main__container section .about__content .about__flex__text .info__title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1161,27 +1161,19 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
           flex-flow: column;
+  width: 100%;
   padding: 3% 1%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   -ms-flex-line-pack: start;
       align-content: flex-start;
-  width: 100%;
 }
 
 .about__main__container section .about__content .about__flex__text .info__title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 100%;
   text-align: center;
 }
 
@@ -1257,7 +1249,7 @@ footer {
     width: 100%;
     height: auto;
   }
-  .about__main__container #section__1__container .about__content .about__flex__text {
+  .about__main__container #section__1__container .about__content .about__flex__text, .about__main__container #section__1__container section .about__content .about__flex__text .info__title, .about__main__container section #section__1__container .about__content .about__flex__text .info__title {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: texto;
@@ -1279,7 +1271,7 @@ footer {
 }
 
 @media screen and (max-width: 480px) {
-  #section__1__container .about__content .about__flex__text {
+  #section__1__container .about__content .about__flex__text, #section__1__container .about__main__container section .about__content .about__flex__text .info__title, .about__main__container section #section__1__container .about__content .about__flex__text .info__title {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
