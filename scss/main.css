@@ -378,7 +378,7 @@ footer {
 .main__banner {
   background-image: url(../dist/assets/Home/header.jpg);
   width: 100%;
-  height: 40rem;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -449,7 +449,7 @@ footer {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   background-size: cover;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -540,11 +540,11 @@ footer {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   width: 70%;
-  height: 70vh;
+  height: auto;
 }
 
 .welcome__main__container .welcome__container .welcome__text__container h3 {
-  font-size: 230%;
+  font-size: 2rem;
   font-weight: 100;
 }
 
@@ -559,7 +559,7 @@ footer {
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
-  font-size: 150%;
+  font-size: 1.25rem;
   font-weight: 300;
   font-family: 'Lato';
   width: 90%;
