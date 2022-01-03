@@ -393,10 +393,6 @@ footer {
   }
 }
 
-.active {
-  background: #d90429;
-}
-
 .main__banner {
   background-image: url(../dist/assets/Home/header.jpg);
   width: 100%;
@@ -760,21 +756,22 @@ footer {
   display: flex;
   -ms-flex-line-pack: center;
       align-content: center;
-  background-color: #1e1f1f;
-  height: 10vh;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: .3s;
-  transition: .3s;
-  text-decoration: none;
-  font-size: 180%;
+  width: 40%;
+  height: 12vh;
   color: #edf2f4;
+  background-color: #1e1f1f;
+  font-size: 1.9rem;
   font-weight: 300;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  text-decoration: none;
   border: 0.3rem solid #1e1f1f;
   margin-bottom: 5vh;
 }
@@ -783,9 +780,7 @@ footer {
   background-color: #edf2f4;
   color: #1e1f1f;
   border: 0.3rem solid #1e1f1f;
-  font-weight: 400;
-  -webkit-transform: scale(1);
-          transform: scale(1);
+  font-weight: 300;
 }
 
 .gallery__main__container {
@@ -910,7 +905,10 @@ footer {
     font-size: 160%;
     border: 0.5rem solid #edf2f4;
   }
-  .welcome__container {
+  .welcome__main__container {
+    width: 100%;
+  }
+  .welcome__main__container .welcome__container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -920,17 +918,16 @@ footer {
             flex-flow: column wrap;
     height: auto;
   }
-  .welcome__container .welcome__text__container {
-    width: 100%;
-    height: auto;
-    text-align: justify;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding-bottom: 1rem;
+  .welcome__main__container .welcome__container .welcome__text__container {
+    width: 80%;
   }
-  .welcome__container .welcome__text__container p {
-    text-align: center;
+  .welcome__main__container .welcome__container .welcome__text__container h3 {
+    font-size: 3rem;
+    width: 100%;
+  }
+  .welcome__main__container .welcome__container .welcome__text__container .welcome__paragraph {
+    padding-top: 1rem;
+    font-size: 2rem;
   }
   .info__extra {
     display: -ms-grid;
@@ -942,16 +939,25 @@ footer {
     -ms-grid-rows: (1fr)[3];
         grid-template-rows: repeat(3, 1fr);
   }
-  .menu__main__container .menu__title h1, .menu__main__container .gallery__title h1 {
-    font-size: 300%;
-    font-weight: 500;
+  .info__extra .info__container img {
+    width: 9rem;
+    padding-top: 2%;
   }
-  .menu__main__container .menu__title span, .menu__main__container .gallery__title span {
-    width: 90%;
-    font-size: 1.7rem;
+  .info__extra .info__container .info__text h3 {
+    font-size: 3.7rem;
+    font-weight: 700;
   }
-  .menu__main__container .menu__title .menu__btn__fullmenu, .menu__main__container .gallery__title .menu__btn__fullmenu {
-    width: 70%;
+  .info__extra .info__container .info__text span {
+    font-size: 2rem;
+    font-style: italic;
+  }
+  #menu__main__container .__title h1 {
+    font-size: 5rem;
+  }
+  #menu__main__container .menu__btn__fullmenu {
+    width: 75%;
+    font-size: 2rem;
+    text-transform: uppercase;
   }
   .gallery__main__container .gallery__container {
     display: -ms-grid;
@@ -964,9 +970,12 @@ footer {
     height: 200vh;
     row-gap: .5vh;
   }
-  .gallery__main__container .gallery__container .picture {
+  .gallery__main__container .gallery__container .grid__picture {
     background-size: cover;
-    background-position: center;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-filter: none;
+            filter: none;
   }
   .gallery__main__container .gallery__container .picture-1 {
     -ms-grid-row: 1;
@@ -975,7 +984,6 @@ footer {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1/2;
-    background-position: bottom;
   }
   .gallery__main__container .gallery__container .picture-2 {
     -ms-grid-row: 2;
@@ -1056,40 +1064,40 @@ footer {
     border-radius: 5px;
   }
   .info__extra .info__container img {
-    width: 8rem;
+    width: 6rem;
     padding-top: 2%;
   }
   .info__extra .info__container .info__text h3 {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     font-weight: 700;
   }
   .info__extra .info__container .info__text span {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     font-style: italic;
   }
   .menu__main__container .menu__title h1 {
     font-size: 4rem;
   }
-  .menu__main__container .container-fluid .row #menu__card__container {
+  .menu__main__container .menu__container .row #menu__card__container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     width: 100%;
   }
-  .menu__main__container .container-fluid .row #menu__card__container .card-body h2 {
-    font-size: 40px;
+  .menu__main__container .menu__container .row #menu__card__container img {
+    width: 50%;
+    margin: auto;
+  }
+  .menu__main__container .menu__container .row #menu__card__container .card-body h2 {
+    font-size: 2rem;
     text-transform: uppercase;
   }
-  .menu__main__container .container-fluid .row #menu__card__container .card-body p {
-    font-size: 30px;
+  .menu__main__container .menu__container .row #menu__card__container .card-body p {
+    font-size: 1.7rem;
   }
   .gallery__main__container .gallery__title h1 {
     font-size: 4rem;
   }
-}
-
-.active {
-  background: #d90429;
 }
 
 .about__main__container {
@@ -1282,10 +1290,6 @@ footer {
   }
 }
 
-.active {
-  background: #d90429;
-}
-
 .menu__main__container {
   width: 100%;
   background: #1e1f1f;
@@ -1454,10 +1458,6 @@ footer {
     font-size: 2.5rem;
     width: 100%;
   }
-}
-
-.active {
-  background: #d90429;
 }
 
 html {
@@ -1897,10 +1897,6 @@ main .main__final__text img {
   }
 }
 
-.active {
-  background: #d90429;
-}
-
 @-webkit-keyframes floating {
   0% {
     -webkit-transform: translateY(-2vh);
@@ -2140,5 +2136,9 @@ textarea {
     font-size: 80%;
     padding-left: 3vh;
   }
+}
+
+.active {
+  background: #d90429;
 }
 /*# sourceMappingURL=main.css.map */
