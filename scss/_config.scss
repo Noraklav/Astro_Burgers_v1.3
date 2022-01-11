@@ -9,6 +9,7 @@ $font-weights: (
     "light": 300,
     "regular": 400,
     "medium": 500,
+    "bolder":600,
     "bold": 700
 );
 
@@ -27,6 +28,11 @@ body::-webkit-scrollbar-thumb{
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+}
+
+@mixin bg-black-white {
+    background: $black;
+    color: $white;
 }
 
 @mixin title-section{

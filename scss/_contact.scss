@@ -17,6 +17,8 @@ main {
 	width: 100%;
 	height: auto;
 }
+
+// Contenedor principal
 .contact__main__container {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
@@ -28,9 +30,10 @@ main {
 	width: 100%;
 }
 
+// Estilos de la imagen flotando
 .astro__img {
 	display: flex;
-	width: 60%;
+	width: 75%;
 	margin: auto;
 	animation: floating linear 4s infinite;
 	&:hover {
@@ -38,6 +41,7 @@ main {
 	}
 }
 
+// Contactanos titulo
 .section__form__title {
 	h1 {
 		span {
@@ -47,11 +51,13 @@ main {
 	}
 }
 
+// Contenedor del formulario
 .contact__form__container {
 	display: grid;
 	justify-items: left;
 	justify-content: center;
 	width: 80%;
+	// Estilos del form
 	form {
 		display: flex;
 		flex-flow: column;
@@ -59,20 +65,24 @@ main {
 	}
 }
 
+// Astronauta para version mobile
 .astro__img__mobile{display: none;}
 
+// Estilos de los label
 label {
 	margin-top: 7%;
 	font-size: 140%;
 	font-weight: 400;
 	padding-bottom: 1%;
 	text-transform: capitalize;
+	// Fondo blanco y negro de las letras
 	span {
 		color: $black;
 		background: $white;
 	}
 }
 
+// Estilos de los input
 input {
 	background: none;
 	border: none;
@@ -83,6 +93,7 @@ input {
 	padding: 2% 0 2% 3%;
 }
 
+// Estilos del textarea
 textarea {
 	background: none;
 	border: none;
@@ -95,6 +106,8 @@ textarea {
 	resize: none;
 	height: 30%;
 }
+
+// Boton de enviar
 .btn {
 	width: 30%;
 	margin-top: 10%;
@@ -102,19 +115,23 @@ textarea {
 	margin: auto;
 	outline: none;
 	padding: 10px 24px;
-	background: $red;
+	background: $black;
 	color: $white;
-	border: 2px solid $red;
-	border-radius: 20px;
-	font-weight: 500;
+	border: .2rem solid $white;
+	font-weight: map-get($font-weights, "regular");
+	border-radius: 0;
 	cursor: pointer;
-	transition: all .4s;
+	@include transition-ease;
 	&:hover {
 		background: $white;
-		border: 2px solid $white;
-		color: $red;
-        font-weight: 700;
-		transform: scale(1.15);
+		border: .2rem solid $black;
+		color: $black;
+		transform: scale(1.1);
+	}
+	// Tamaño de la fuente
+	span{
+		font-size: 1.5rem;
+		text-transform: uppercase;
 	}
 }
 

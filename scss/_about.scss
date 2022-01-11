@@ -1,19 +1,22 @@
+// Contenedor principal
 .about__main__container{
     width: 100%;
     height: auto;
     display: flex;
     flex-flow: column wrap;
     background: $white;
+    // Titulo principal
     .about__title{
         h1{
             @include title-section;
         }
     }
+
     section{
         display: flex;
         justify-content: space-evenly;
         height: auto;
-
+        // Contenedor de la imagen y el texto
         .about__content{
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -21,18 +24,20 @@
             width: 100%;
             height: auto;
             justify-items: center;
+            // Posicionamiento de la imagen
             .picture__container{
                 display: flex;
                 justify-content: center;
                 width: 80%;
                 height: auto;
                 border: .5rem solid $black;
+                // Estilo de la imagen
                 img{
                     @include bg-config;
                     width: 100%;
                 }
             }
-    
+            // Contenedor del texto
             .about__flex__text{
                 display: flex;
                 flex-flow: column;
@@ -40,17 +45,19 @@
                 padding: 3% 1%;
                 justify-content: space-between;
                 align-content: flex-start;
+                // Titulo
                 .info__title{
                     @extend  .about__flex__text;
                     justify-content: center;
                     text-align: center;
+                    // Pregunta
                     h3{
-                        background: $black;
-                        color: $white;
+                        @include bg-black-white;
                         text-transform: uppercase;
                         font-size: 1.3rem;
                         padding: .3rem 0;
                     }
+                    // Respuesta
                     p{
                         width: 75%;
                         font-size: 1.25rem;
@@ -61,13 +68,16 @@
         }
     }
 
+    // Contenedor principal section-2
     .section-2{
         display: flex;
         justify-content: center;
         align-items: center;
         margin-bottom: 2%;
+        // Alteracion a bootstrap
         #card{
             background: none;
+            // Tamaño de la imagen
             .card-img-top{
                 width: 7rem;
                 height: 7rem;
@@ -82,15 +92,15 @@
     }
 
 @media screen and (min-width: 1201px){
-    // Disponible en la Tercer Engrega
+    // Disponible en la entrega final
 }
 
 @media screen and (max-width: 1200px){
-    // Disponible en la Tercer Engrega
+    // Disponible en la entrega final
 }
 
 @media screen and (max-width: 1024px){
-    // Disponible en la Tercer Engrega
+    // Disponible en la entrega final
 }
 
 @media screen and (max-width: 768px){

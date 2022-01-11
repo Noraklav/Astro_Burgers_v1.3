@@ -10,6 +10,7 @@ body{
 main{
     padding-top: 50px;
     width: 100%;
+    // Contenedor principal del titulo
     .main__title__container{
         display: flex;
         justify-content: center;
@@ -17,14 +18,16 @@ main{
         width: 100%;
         height: 80vh;
         margin: auto;
+        // Estilos del titulo
         .main__title{
-            font-family: 'Poppins';
-            font-weight: 600;
+            font-family: $font-mont;
+            font-weight: map-get($font-weights, 'bolder');
             text-align: center;
             text-transform: uppercase;
             font-size: 400%;
             animation: pulse 3s linear infinite;
             color: $white;
+            // Animacion de pulso
             @keyframes pulse{
                 0%{transform: scale(1);}
                 30%{transform: scale(1.1);}
@@ -34,6 +37,8 @@ main{
             }
         }
     }
+
+    // Contenedor y estilos de la galeria
     .main__grid__container{
         display: grid;
         width: 100%;
@@ -120,6 +125,7 @@ main{
             grid-row: 7/8;
         }
     }
+    // Te esperamos en...
     .main__final__text{
         display: flex;
         background: $black;

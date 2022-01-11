@@ -11,7 +11,7 @@
             text-align: center;
         }
     }
-    
+    // Contenedor principal de las comidas
     .menu__food__container{
         display: flex;
         width: 100%;
@@ -20,17 +20,14 @@
         margin: auto;
         flex-wrap: wrap;
         
-        .menu__container{
-            // border: .15rem dashed $white;
-            text-align: center;
-        }
-
+        // Aperitivos, bebidas y postres
         .menu__section__2{
             display: flex;
             flex-flow: column;
             justify-content: space-between;
         }
 
+        // Estilos de cada titulo
         .__title{
             display: flex;
             justify-content: center;
@@ -45,31 +42,18 @@
             padding: 1% 0;
             margin: auto;
         }
+
+        // Estilos de cada contenedor
         .__container{
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             grid-template-rows: repeat(1, 1fr);
             width: 100%;
             padding: .7rem 0;
-            // margin: 1% 0;
-            transition: all .3s ease-in;
-            // border-radius: 2.7rem;
             justify-items: center;
             font-family: $font-mont;
 
-            // No sacar por si me arrepiento
-            // &:hover{
-            //     animation: shake .7s linear both;
-            //     background: $black;
-            // }
-            // @keyframes shake{
-            //     0%{transform: translateX(-15px);}
-            //     25%{transform: translateX(15px);}
-            //     50%{transform: translateX(-7px);}
-            //     75%{transform: translateX(7px);}
-            //     100%{transform: translateX(0px);}
-            // }
-
+            // Titulo del plato y descripcion
             .__content{
                 display: flex;
                 flex-flow: column;
@@ -78,14 +62,15 @@
                 grid-column: 1/4;
                 text-transform: uppercase;
                 text-align: left;
+                // Titulo
                 h2{
                     font-size: 1.5rem;
                     text-transform: uppercase;
                     font-weight: map-get($font-weights, 'bold');
                     color: $white;
                 }
+                // Descripcion
                 p{
-                    // font-family: 'Poppins';
                     font-size: .8rem;
                     font-style: normal;
                     font-weight: map-get($font-weights, 'light');
@@ -93,6 +78,8 @@
                     color: $white;
                 }
             }
+
+            // Precios
             .__price{
                 display: flex;
                 align-items: center;

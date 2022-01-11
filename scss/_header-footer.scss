@@ -24,7 +24,7 @@
 
 
 
-// Footer
+// Contenedor principal
 footer {
 	width: 100%;
 	height: auto;
@@ -34,16 +34,20 @@ footer {
 	align-items: center;
 	justify-content: space-between;
 }
+
+// Contenedor de las info
 .footer__main__container {
 	display: grid;
 	width: 100%;
 	height: auto;
-	grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: 1fr;
 	column-gap: 25px;
     align-items: center;
     justify-items: center;
 }
+
+// Contactanos
 .footer__contact__container {
 	display: flex;
 	flex-flow: column;
@@ -55,9 +59,13 @@ footer {
 		color: $blue;
 	}
 }
+
+// Astro Burgers logo
 .logo-footer {
 	width: 300px;
 }
+
+// Contactanos -> Informacion
 .contact__data {
 	display: flex;
 	align-items: center;
@@ -86,13 +94,14 @@ footer {
         color: $blue;
     }
 }
-.footer__map__container {
-	margin: auto;
-}
+
+// Contenedor de las redes sociales
 .footer__social_media__container {
 	display: flex;
 	flex-direction: column;
 }
+
+// Redes sociales (Info)
 .social__media__data {
 	display: flex;
 	width: 100%;
@@ -105,16 +114,19 @@ footer {
 		font-weight: 400;
 	}
 }
+
+// Estilos de los iconos
 #social__link {
-	color: #222;
 	width: 40px;
 	height: 40px;
 	margin-right: 2vh;
 	padding: 0.5rem;
 	color: $white;
-	background: $red;
+	background: $blue;
 	border-radius: 50px;
 }
+
+// Copyright
 .copy {
 	display: flex;
 	width: 100%;
@@ -137,6 +149,80 @@ footer {
 	}
 }
 
+@media screen and (max-width: 1024px) and (min-width: 1025px) {
+	footer {
+		display: flex;
+		width: 100%;
+		height: auto;
+		justify-content: space-around;
+		padding: 0 2rem;
+	}
+	// Contenedor principal del footer
+	.footer__main__container {
+		display: flex;
+		flex-flow: row;
+		align-items: center;
+		justify-content: center;
+		height: auto;
+		img{
+			width: 13rem;
+		}
+	}
+
+	// Contactanos contendor
+	.footer__contact__data {
+		display: flex;
+		flex-flow: column wrap;
+		justify-content: space-between;
+		align-content: center;
+		margin-top: 2vh;
+		width: 80%;
+		h2 {
+			text-align: center;
+            font-size: 2.5rem;
+		}
+	}
+	
+	.contact__data {
+		display: flex;
+		justify-content: center;
+        a, p{
+            font-size: 1.2rem;
+        }
+	}
+
+	.footer__social_media__container {
+		display: flex;
+		flex-flow: column;
+		.social__media__data{
+			width: 100%;
+			a{
+				font-size: 1rem;
+			}
+		}
+	}
+
+    // #footer__mobile{
+    //     width: 100%;
+    //     display: flex;
+    //     justify-content: space-evenly;
+    //     .social__media__data__mobile{
+	// 		margin: auto;
+    //         #social__link{
+    //             width: 4rem;
+    //             height: 4rem;
+	// 			margin: auto;
+	// 			padding: 1rem;
+	// 		}
+	// 		a, p{
+	// 			font-size: 1rem;
+	// 		}
+    //     }
+    // }
+	
+	.footer__mobile{display: none;}
+}
+
 @media screen and (max-width: 768px) {
 	.logo-footer, .footer__map__container, .social__media__data a {display: none;}
 		
@@ -150,6 +236,7 @@ footer {
 		height: auto;
 		justify-content: space-around;
 	}
+	// Contenedor principal del footer
 	.footer__main__container {
 		display: flex;
 		flex-flow: column;
@@ -157,6 +244,7 @@ footer {
 		justify-content: center;
 		height: auto;
 	}
+	// Contactanos contendor
 	.footer__contact__data {
 		display: flex;
 		flex-flow: column wrap;
@@ -169,6 +257,7 @@ footer {
             border-bottom: .2rem solid $blue;
 		}
 	}
+
 	.contact__data {
 		display: flex;
 		justify-content: center;
