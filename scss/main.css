@@ -4,6 +4,8 @@ body::-webkit-scrollbar {
   background-color: #1e1f1f;
 }
 
+*{font-family: 'Montserrat', sans-serif;}
+
 body::-webkit-scrollbar-thumb {
   background: #d90429;
 }
@@ -1316,7 +1318,8 @@ footer {
   .about__main__container #section__1__container {
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "galeria" "texto";
+        grid-template-areas: "galeria"
+ "texto";
     width: 100%;
     height: auto;
   }
